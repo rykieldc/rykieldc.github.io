@@ -1,0 +1,2186 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="css/style.css">
+  <title>Web Application Development Documentation</title>
+</head>
+
+<body>
+  <nav id="navbar">
+    <header>Web Application Development Documentation</header>
+    <ul>
+      <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+      <li><a class="nav-link" href="#ClientSide_vs_ServerSide">Client-Side vs Server-Side Development</a></li>
+      <li><a class="nav-link" href="#Overview_WebTech">Overview of Web Technologies</a></li>
+      <li><a class="nav-link" href="#Git">Git</a></li>
+      <li><a class="nav-link" href="#Intro_to_HTML5_CSS_JS">Introduction to HTML5, CSS, and JavaScript</a></li>
+      <li><a class="nav-link" href="#HTML_Elements">HTML Elements</a></li>
+      <li>
+        <a class="nav-link" href="#Intro_CSS">Introducing Cascading Style Sheets</a>
+      </li>
+      <li><a class="nav-link" href="#WSL">Windows Subsystem for Linux</a></li>
+      <li>
+        <a class="nav-link" href="#Flexbox">Flexbox</a>
+      </li>
+      <li><a class="nav-link" href="#Reference">References</a></li>
+    </ul>
+  </nav>
+  <main id="main-doc">
+    <section class="main-section" id="Introduction">
+      <header class="title">Introduction</header>
+      <hr>
+      <article>
+        <p>
+          Web Application Development is the process of creating and maintaining web
+          applications, which are software programs that run on a web server and are
+          accessed through a web browser. Web applications are designed to provide a
+          user-friendly interface and interactive experience for users, allowing them to
+          perform various tasks and functions online.
+
+
+        <p>
+          Furthermore, it involves several key components, including
+          front-end development, back-end development, and database management. Front-end
+          development focuses on the user interface and experience, using technologies
+          such as HTML, CSS, and JavaScript. Back-end development deals with the
+          server-side logic and functionality, using programming languages such as
+          Python, Ruby, and Java. Database management involves storing and retrieving
+          data from a database, using technologies such as SQL and NoSQL.
+
+
+        <p>
+          Also, web application development requires a strong understanding of web
+          technologies, programming languages, and software development principles. It
+          also involves problem-solving skills, creativity, and attention to detail. With
+          the increasing demand for web applications in various industries, web
+          application development has become a valuable skill set for many professionals.
+
+      </article>
+    </section>
+
+    <br>
+    <section class="main-section" id="ClientSide_vs_ServerSide">
+      <header class="title">Client-Side vs Server-Side Development</header>
+      <hr>
+      <article>
+        <p>
+          Client-side and server-side development are two distinct aspects of web
+          development that involve different technologies, responsibilities, and
+          functionalities.
+
+
+        <ul>
+          <strong class="sub-title-1">Client-Side Development</strong>
+          <li class="sub-title-li-1">
+            <strong>Definition:</strong>
+            Client-side development refers to the activities that take place
+            on the user's device (typically a web browser) and involve the
+            user interface and user experience.
+          </li>
+          <li class="sub-title-li-1">
+            <strong>Technologies:</strong>
+            HTML (Hypertext Markup Language), CSS (Cascading Style Sheets),
+            JavaScript, and various front-end frameworks and libraries like
+            React, Angular, or Vue.js.
+          </li>
+          <li class="sub-title-li-1">
+            <strong>Responsibilities:</strong>
+            <ul>
+              <li class="sub-title-li-2">
+                Creating the structure (HTML) and style (CSS) of a web page.
+              </li>
+              <li class="sub-title-li-2">
+                Implementing interactive and dynamic features using JavaScript.
+              </li>
+              <li class="sub-title-li-2">
+                Managing the presentation layer and user interactions.
+              </li>
+            </ul>
+          </li>
+          <li class="sub-title-li-1">
+            <strong>Advantages:</strong>
+            <ul>
+              <li class="sub-title-li-2">
+                Fast and responsive user interfaces
+              </li>
+              <li class="sub-title-li-2">
+                Reduces server load as certain operations are performed on the client's side.
+              </li>
+              <li class="sub-title-li-2">
+                Enhanced user experience with dynamic and interactive elements.
+              </li>
+            </ul>
+          </li>
+
+          <br>
+          <hr><br>
+
+          <strong class="sub-title-1">Server-Side Development</strong>
+          <li class="sub-title-li-1">
+            <strong>Definition:</strong>
+            Server-side development involves activities that occur on the web server,
+            managing and processing data, handling requests, and performing various
+            server-related operations.
+          </li>
+          <li class="sub-title-li-1">
+            <strong>Technologies:</strong>
+            Server-side languages such as PHP, Python (Django), Ruby (Ruby on Rails), Java
+            (Spring), and JavaScript (Node.js).
+          </li>
+          <li class="sub-title-li-1">
+            <strong>Responsibilities:</strong>
+            <ul>
+              <li class="sub-title-li-2">
+                Handling data storage and retrieval from databases.
+              </li>
+              <li class="sub-title-li-2">
+                Executing business logic and application functionality.
+              </li>
+              <li class="sub-title-li-2">
+                Managing user authentication and authorization.
+              </li>
+              <li class="sub-title-li-2">
+                Generating dynamic content to be sent to the client.
+              </li>
+            </ul>
+          </li>
+          <li class="sub-title-li-1">
+            <strong>Advantages:</strong>
+            <ul>
+              <li class="sub-title-li-2">
+                Enhanced security as sensitive operations are performed on the server.
+              </li>
+              <li class="sub-title-li-2">
+                Centralized control over data and business logic.
+              </li>
+              <li class="sub-title-li-2">
+                Better scalability for handling a large number of users.
+              </li>
+            </ul>
+          </li>
+
+          <br>
+          <hr><br>
+          <strong class="sub-title-1">Interaction Between Client-Side and Server-Side</strong>
+          <li class="sub-title-li-1">
+            <strong>Communication:</strong>
+            Both sides communicate through protocols like HTTP(S), and they exchange data
+            using formats like JSON or XML.
+          </li>
+          <li class="sub-title-li-1">
+            <strong>Workflow:</strong>
+            A typical web application involves the client making requests to the server, and
+            the server responds with the necessary data or performs actions.
+          </li>
+
+          <br>
+          <strong class="sub-title-1">Full-Stack Development</strong>
+          <li class="sub-title-li-1">
+            <strong>Definition:</strong>
+            Developers who work on both client-side and server-side aspects are known as
+            full-stack developers.
+          </li>
+          <li class="sub-title-li-1">
+            <strong>Responsibilities:</strong>
+            Full-stack developers have a broader skill set and can handle tasks ranging from
+            designing user interfaces to managing server infrastructure.
+          </li>
+        </ul>
+
+        <p>
+          In modern web development, a balanced combination of both client-side and
+          server-side technologies is crucial for building robust and efficient web
+          applications. The choice between them depends on factors such as project
+          requirements, performance considerations, and the desired user experience.
+
+      </article>
+    </section>
+
+    <br>
+    <section class="main-section" id="Overview_WebTech">
+      <header class="title">Overview of Web Technologies</header>
+      <hr>
+      <article>
+        <p>
+          Web technology refers to the various tools, techniques, and protocols used for
+          communication between different types of devices over the Internet. It is
+          primarily concerned with how computers and systems connect to and interact with
+          the web, and how the most common languages of the internet (HTML, CSS, and
+          JavaScript) work together to allow information to be shared worldwide.
+
+        <ul>
+          <strong class="sub-title-1">Internet</strong>
+          <li class="sub-title-li-1">
+            Global network of interconnected computers.
+          </li>
+          <li class="sub-title-li-1">
+            Enables communication, information sharing, and collaboration.
+          </li>
+
+          <br>
+          <hr><br>
+
+
+          <strong class="sub-title-1">Evolution of the World Wide Web</strong>
+          <li class="sub-title-li-1"> <!--Evolution-->
+            <strong>
+              Birth of the World Wide Web (WWW) by Tim Berners-Lee in 1989.
+            </strong>
+
+            <ul> <!--History-->
+              <li class="sub-title-li-2">
+                The birth of the Internet can be traced back to the late 1960s and early
+                1970s with the development of ARPANET (Advanced Research Projects Agency
+                Network), a pioneering network that laid the groundwork for the
+                interconnected global network we know today. Here are key milestones in the
+                birth and early development of the Internet:
+
+                <ul> <!--ARPANET -->
+                  <li class="sub-title-li-2">
+                    <strong>
+                      ARPANET Creation (1969)
+                    </strong>
+
+                    <ul>
+                      <li class="sub-title-li-2">
+                        ARPANET, the first packet-switching network, was developed by the
+                        United States Department of Defense's Advanced Research Projects
+                        Agency (ARPA, now DARPA).
+                      </li>
+                      <li class="sub-title-li-2">
+                        On October 29, 1969, ARPANET's first message was sent between two
+                        computers at the University of California, Los Angeles (UCLA) and
+                        the Stanford Research Institute (SRI). The message was "LOGIN."
+                      </li>
+                    </ul>
+
+                  </li>
+                </ul> <!--ARPANET -->
+
+                <ul> <!--TCP/IP -->
+                  <li class="sub-title-li-2">
+                    <strong>
+                      Development of TCP/IP (1970s)
+                    </strong>
+
+                    <ul>
+                      <li class="sub-title-li-2">
+                        The Transmission Control Protocol (TCP) and Internet Protocol (IP) were developed by Vinton Cerf
+                        and Bob Kahn.
+                      </li>
+                      <li class="sub-title-li-2">
+                        TCP/IP became the standardized communications protocol suite for ARPANET, forming the foundation
+                        for the entire Internet.
+                      </li>
+                    </ul>
+
+                  </li>
+                </ul><!--TCP/IP -->
+
+                <ul> <!--Expansion and Standardization-->
+                  <li class="sub-title-li-2">
+                    <strong>
+                      Expansion and Standardization (1970s-1980s)
+                    </strong>
+
+                    <ul>
+                      <li class="sub-title-li-2">
+                        The ARPANET continued to grow, connecting more research institutions and universities.
+                      </li>
+                      <li class="sub-title-li-2">
+                        TCP/IP was adopted as the protocol for connecting diverse networks, leading to the term
+                        "Internet" (short for interconnected networks).
+                      </li>
+                      <li class="sub-title-li-2">
+                        The development of standardized protocols contributed to the Internet's expansion.
+                      </li>
+                    </ul>
+
+                  </li>
+                </ul> <!--Expansion and Standardization-->
+
+                <ul> <!--DNS-->
+                  <li class="sub-title-li-2">
+                    <strong>
+                      Domain Name System (DNS) Introduction (1983)
+                    </strong>
+
+                    <ul>
+                      <li class="sub-title-li-2">
+                        The Domain Name System, which translates human-readable domain names into IP addresses, was
+                        introduced in 1983.
+                      </li>
+                      <li class="sub-title-li-2">
+                        This facilitated the use of easily memorable names instead of numerical IP addresses.
+                      </li>
+                    </ul>
+
+                  </li>
+                </ul> <!--DNS-->
+
+                <ul> <!--Commercialization-->
+                  <li class="sub-title-li-2">
+                    <strong>
+                      Commercialization (1990s)
+                    </strong>
+
+                    <ul>
+                      <li class="sub-title-li-2">
+                        The 1990s saw the commercialization of the Internet, with the launch of the World Wide Web and
+                        the development of browsers like Netscape.
+                      </li>
+                      <li class="sub-title-li-2">
+                        The Internet became accessible to the public, leading to a rapid increase in websites and online
+                        services.
+                      </li>
+                    </ul>
+
+                  </li>
+                </ul> <!--Commercialization-->
+
+                <ul> <!--Global Expansion and Popularization-->
+                  <li class="sub-title-li-2">
+                    <strong>
+                      Global Expansion and Popularization (1990s-Present)
+                    </strong>
+
+                    <ul>
+                      <li class="sub-title-li-2">
+                        The Internet expanded globally, connecting people, businesses, and governments worldwide.
+                      </li>
+                      <li class="sub-title-li-2">
+                        Technologies like broadband and mobile internet further increased accessibility.
+                      </li>
+                      <li class="sub-title-li-2">
+                        The Internet has become an integral part of everyday life, shaping communication, commerce,
+                        education, and entertainment.
+                      </li>
+                    </ul>
+                  </li>
+                </ul> <!--Global Expansion and Popularization-->
+
+                <p>
+                  The birth and development of the Internet were collaborative efforts
+                  involving numerous individuals, institutions, and technological
+                  advancements. The ARPANET project laid the groundwork for the
+                  interconnected and decentralized network that has since transformed how
+                  information is shared and accessed globally.
+
+
+              </li>
+            </ul> <!--History-->
+          </li> <!--Evolution-->
+
+          <br>
+          <hr><br>
+
+          <strong class="sub-title-1">Key Internet Protocol</strong>
+          <li class="sub-title-li-1"><!--HTTP-->
+            <strong>
+              HTTP (Hypertext Transfer Protocol)
+            </strong>
+
+            <ul>
+              <li class="sub-title-li-2">Foundation of data communication on the web.</li>
+              <li class="sub-title-li-2">Defines how messages are formatted and transmitted.</li>
+            </ul>
+
+          </li> <!--HTTP-->
+
+          <li class="sub-title-li-1"> <!--HTTPS-->
+            <strong>
+              HTTPS (Hypertext Transfer Protocol Secure)
+            </strong>
+
+            <ul>
+              <li class="sub-title-li-2">Secure version of HTTP using encryption (SSL/TLS).</li>
+              <li class="sub-title-li-2">Ensures secure data transfer, especially for sensitive information.</li>
+            </ul>
+
+          </li><!--HTTPS-->
+
+          <li class="sub-title-li-1"> <!--TCP/IP-->
+            <strong>
+              TCP/IP (Transmission Control Protocol/Internet Protocol)
+            </strong>
+
+            <ul>
+              <li class="sub-title-li-2">Fundamental suite of protocols for internet communication.</li>
+              <li class="sub-title-li-2">Facilitates reliable data transmission between connected devices.</li>
+            </ul>
+
+          </li><!--TCP/IP-->
+
+          <br>
+          <hr><br>
+
+          <strong class="sub-title-1">Client-Server Architecture</strong>
+          <li class="sub-title-li-1"><!--Roles-->
+            <strong>
+              Roles
+            </strong>
+
+            <ul>
+              <li class="sub-title-li-2">Clients request services or resources.</li>
+              <li class="sub-title-li-2">Servers provide requested services or resources.</li>
+            </ul>
+
+          </li> <!--Roles-->
+
+          <li class="sub-title-li-1"> <!--Request-Response Cycle-->
+            <strong>
+              Request-Response Cycle
+            </strong>
+
+            <ul>
+              <li class="sub-title-li-2">Clients send requests to servers.</li>
+              <li class="sub-title-li-2">Servers process requests and send back responses.</li>
+            </ul>
+
+          </li><!--Request-Response Cycle-->
+
+          <li class="sub-title-li-1"> <!--Statelessness-->
+            <strong>
+              Statelessness
+            </strong>
+
+            <ul>
+              <li class="sub-title-li-2">Each request from a client to a server is independent.</li>
+              <li class="sub-title-li-2">No retention of client state between requests.</li>
+            </ul>
+
+          </li><!--Statelessness-->
+
+          <br>
+          <hr><br>
+
+          <strong class="sub-title-1">Internet Technologies</strong>
+          <li class="sub-title-li-1"><!--HTML-->
+            <strong>
+              HTML (Hypertext Markup Language)
+            </strong>
+
+            <ul>
+              <li class="sub-title-li-2">Standard markup language for creating web pages.</li>
+              <li class="sub-title-li-2">Defines structure and layout using tags.</li>
+            </ul>
+
+          </li> <!--HTML-->
+
+          <li class="sub-title-li-1"> <!--CSS-->
+            <strong>
+              CSS (Cascading Style Sheets)
+            </strong>
+
+            <ul>
+              <li class="sub-title-li-2">Style sheet language for describing the presentation of a document.</li>
+              <li class="sub-title-li-2">Enhances the visual presentation of HTML elements.</li>
+            </ul>
+
+          </li><!--CSS-->
+
+          <li class="sub-title-li-1"> <!--JavaScript-->
+            <strong>
+              JavaScript
+            </strong>
+
+            <ul>
+              <li class="sub-title-li-2">Programming language that enables dynamic content on web pages.</li>
+              <li class="sub-title-li-2">Enhances interactivity and user experience.</li>
+            </ul>
+
+          </li><!--JavaScript-->
+
+          <br>
+          <hr><br>
+
+          <strong class="sub-title-1">Responsive Web Design</strong>
+          <li class="sub-title-li-1"><!--Importance-->
+            <strong>
+              Importance:
+            </strong>
+
+            <ul>
+              <li class="sub-title-li-2">Ensures web applications work well on various devices and screen sizes.</li>
+              <li class="sub-title-li-2">Enhances user experience across desktops, tablets, and mobile devices.</li>
+            </ul>
+
+          </li> <!--Importance-->
+
+          <li class="sub-title-li-1"> <!--Media Queries-->
+            <strong>
+              Media Queries:
+            </strong>
+
+            <ul>
+              <li class="sub-title-li-2">CSS technique for applying styles based on device characteristics.</li>
+              <li class="sub-title-li-2">Allows adaptation to different viewport sizes.</li>
+            </ul>
+
+          </li><!--Media Queries-->
+
+          <li class="sub-title-li-1"> <!--Flexbox and Grid Layout-->
+            <strong>
+              Flexbox and Grid Layout:
+            </strong>
+
+            <ul>
+              <li class="sub-title-li-2">CSS layout models that simplify the design of flexible and responsive web
+                layouts.</li>
+            </ul>
+
+          </li><!--Flexbox and Grid Layout-->
+
+          <br>
+          <hr><br>
+
+          <strong class="sub-title-1">Conclusion</strong>
+          <li class="sub-title-li-1"> The Internet is a global network connecting computers. </li>
+
+          <li class="sub-title-li-1">The World Wide Web facilitates information sharing and dynamic content.</li>
+
+          <li class="sub-title-li-1">Protocols like HTTP, HTTPS, and TCP/IP underpin internet communication.</li>
+
+          <li class="sub-title-li-1">Client-server architecture involves clients making requests and servers providing
+            responses.</li>
+
+          <li class="sub-title-li-1">Web technologies such as HTML, CSS, and JavaScript enable web development.</li>
+
+          <li class="sub-title-li-1">Responsive web design ensures adaptability to diverse devices.</li>
+        </ul>
+
+        <p>
+          This overview provides a foundational understanding of key concepts in web
+          technologies, including the Internet, the World Wide Web, internet protocols,
+          client-server architecture, and fundamental web development technologies.
+
+      </article>
+    </section>
+
+    <br>
+    <section class="main-section" id="Git">
+      <header class="title">Git</header>
+      <hr>
+      <article>
+        <p>
+          Git is a free and open source distributed version control system designed to
+          handle everything from small to very large projects with speed and efficiency.
+          It is easy to learn and has a tiny footprint with lightning fast performance.
+          Moreover, it outclasses SCM tools like Subversion, CVS, Perforce, and ClearCase with
+          features like cheap local branching, convenient staging areas, and multiple
+          workflows.
+        </p>
+
+        <strong class="sub-title-1">Setup Git</strong>
+        <ul>
+          <strong class="sub-title-2"><u>Install Git on Windows</u></strong>
+          <ol>
+            <li>Navigate to the latest <a href="https://gitforwindows.org/">Git for Windows installer</a> and download
+              the latest version.</li>
+
+            <li>Once the installer has started, follow the instructions as provided in the <strong>Git Setup</strong>
+              wizard screen until the installation is complete.</li>
+
+            <li>Open the windows command prompt (or <strong>Git Bash</strong> if you selected not to use the standard
+              Git Windows Command Prompt during the Git installation).</li>
+
+            <li>Type <code class="code-inline">git version</code> to verify Git was installed.</li>
+          </ol>
+
+          <p>Note: <a href="https://git-scm.com/download/win"><code class="code-inline">git-scm</a></code> is a popular
+              and recommended resource for downloading Git for Windows. The advantage of downloading Git from <code
+                class="code-inline">git-scm</code> is that your download automatically starts with the latest version of
+              Git included with the recommended command prompt, <code class="code-inline">Git Bash</code>. The download
+              source is the same <a href="https://gitforwindows.org/">Git for Windows installer</a> as referenced in the
+              steps above.
+          </p>
+
+          <strong class="sub-title-2"><u>Install Git on Mac</u></strong>
+          <ol>
+            <li>Navigate to the latest <a
+                href="https://sourceforge.net/projects/git-osx-installer/files/git-2.23.0-intel-universal-mavericks.dmg/download?use_mirror=autoselect">macOS
+                Git Installer</a> and download the latest version.</li>
+            <li>Once the installer has started, follow the instructions as provided until the installation is
+              complete.</li>
+            <li>Open the command prompt "terminal" and type <code class="code-inline">git version</code> to verify
+              Git was installed.</li>
+          </ol>
+          <p>Note: <a href="https://git-scm.com/download/mac"><code class="code-inline">git-scm</code></a> is a
+            popular and recommended resource for downloading Git on a Mac. The advantage of downloading Git from
+            <code class="code-inline">git-scm</code> is that your download automatically starts with the latest
+            version of Git. The download source is the same <a
+              href="https://sourceforge.net/projects/git-osx-installer/files/git-2.23.0-intel-universal-mavericks.dmg/download?use_mirror=autoselect">macOS
+              Git Installer</a> as referenced in the steps above.
+        </ul>
+        <br>
+        <hr><br>
+        <strong class="sub-title-1">Clone Repository</strong>
+        <ol>
+          <li>On GitHub.com, navigate to the main page of the repository.</li>
+          <li>Above the list of files, click &lt;&gt;<strong>Code</strong>.</li>
+          <li>Copy the URL for the repository.</li>
+          <li>Open cmd or terminal or any of your preferred CLI.</li>
+          <li>
+            Select the best location for you to clone. Change the current working directory to
+            the location where you want the cloned directory. For example you want to clone it in C:/Users/PC,
+
+            <code class="code-block"> C:\>
+              C:\>cd Users\PC 
+              C:\Users\PC> 
+            </code>
+          </li>
+          <li>
+            Type <code class="code-inline">git clone</code>, and then paste the URL you copied earlier.
+            <code class="code-block">git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
+            </code>
+          </li>
+          <li>
+            Press <strong>Enter</strong> to create your local clone.
+            <code class="code-block">$ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
+            > Cloning into `PC`...
+            > remote: Counting objects: 10, done.
+            > remote: Compressing objects: 100% (8/8), done.
+            > remove: Total 10 (delta 1), reused 10 (delta 1)
+            > Unpacking objects: 100% (10/10), done.
+          </code>
+          </li>
+          <li>
+            After successfully cloning, bear in mind that a new folder is created—which is your
+            repository folder. Don’t forget to move inside that folder before issuing the git
+            commands later. To do this, change the directory by typing <code
+              class="code-inline">cd [repository name]</code>.
+          </li>
+        </ol>
+
+        <br>
+        <hr><br>
+
+        <div>
+          <h2>Git Add</h2>
+          <p>The <code class="code-inline">git add</code> command adds new or changed files in your working directory to
+            the Git staging area.</p>
+          <p><code class="code-inline">git add</code> is an important command - without it, no <code
+              class="code-inline">git commit</code> would ever do anything. Sometimes, <code
+              class="code-inline">git add</code> can have a reputation for being an unnecessary step in development. But
+            in reality, <code class="code-inline">git add</code> is an important and powerful tool. <code
+              class="code-inline">git add</code> allows you to shape history without changing how you work.</p>
+          <div>
+            <h3>When do you use <code class="code-inline">git add</code>?</h3>
+            <code class="code-block">git add README.md</code>
+            <p>As you're working, you change and save a file, or multiple files. Then, before you commit, you must <code
+                class="code-inline">git add</code>. This step allows you to choose what you are going to commit. Commits
+              should be logical, atomic units of change - but not everyone works that way. Maybe you are making changes
+              to files that <em>aren't</em> logical or atomic units of change. <code class="code-inline">git add</code>
+              allows you to systematically shape your commits and your history anyway.</p>
+          </div>
+          <div>
+            <h3>What Does Git Add Do?</h3>
+            <p><code class="code-inline">git add [filename]</code> selects that file, and moves it to the staging area,
+              marking it for inclusion in the next commit. You can select all files, a directory, specific files, or
+              even specific parts of a file for staging and commit.</p>
+            <p>This means if you <code class="code-inline">git add</code> a deleted file the <em>deletion</em> is staged
+              for commit. The language of "add" when you're actually "deleting" can be confusing. If you think or use
+              <code class="code-inline">git stage</code> in place of <code class="code-inline">git add</code>, the
+              reality of what is happening may be more clear.
+            </p>
+            <p><code class="code-inline">git add</code> and <code class="code-inline">git commit</code> go together hand
+              in hand. They don't work when they aren't used together. And, they both work best when used thinking of
+              their joint functionality.</p>
+          </div>
+          <div>
+            <h3>How to Use <code class="code-inline">git add</code></h3>
+            <ul>
+              <li>
+                <h3>Common usages and options for <code class="code-inline">git add</code></h3>
+                <ul>
+                  <li><code class="code-inline">git add &lt;path&gt;</code>: Stage a specific directory or file</li>
+                  <li><code class="code-inline">git add .</code>: Stage all files (that are not listed in the <code
+                      class="code-inline">.gitignore</code>) in the entire repository</li>
+                  <li><code class="code-inline">git add -p</code>: Interactively stage hunks of changes</li>
+                </ul>
+                <p>You can see all of the many options with <code class="code-inline">git add</code> in <a
+                    href="https://git-scm.com/docs/git-add">git-scm's documentation</a>.</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <br>
+        <hr><br>
+
+        <div>
+          <h2>Git Commit</h2>
+          <p><code class="code-inline">git commit</code> creates a commit, which is like a snapshot of your repository.
+            These commits are snapshots of your entire repository at specific times. You should make new commits often,
+            based around logical units of change. Over time, commits should tell a story of the history of your
+            repository and how it came to be the way that it currently is. Commits include lots of metadata in addition
+            to the contents and message, like the author, timestamp, and more.</p>
+
+          <div>
+            <h3>How Git Commit Works</h3>
+            <p>Commits are the building blocks of "save points" within Git's version control.</p>
+            <div>
+              <code
+                class="code-block">git commit -m "<span>update the README.md with link to contributing guide</span>"</code>
+            </div>
+            <div>
+              <h3>Commits shape history</h3>
+              <p>By using commits, you're able to craft history intentionally and safely. You can make commits to
+                different branches, and specify exactly what changes you want to include. Commits are created on the
+                branch that you're currently checked out to (wherever HEAD is pointing) so it's always a good idea to
+                run <code class="code-inline">git status</code> before making a commit, to check that you're checked-out
+                to the branch that you intend to be. Before you commit, you will need to stage any new changes that
+                you'd like to include in the commit using <code class="code-inline">git add [file]</code>.</p>
+              <p>Commits are lightweight SHA hashes, objects within Git. As long as you're working with text files, you
+                won't need to worry about how many files you have, how big they are, or how many commits you make. Git
+                can handle it!</p>
+            </div>
+            <div>
+              <h3>Committing in two phases</h3>
+              <p>Commits have two phases to help you craft commits properly. Commits should be logical, atomic units of
+                change that represent a specific idea. But, not all humans work that way. You may get carried away and
+                end up solving two or three problems before you remember to commit! That's OK - Git can handle that.
+                Once you're ready to craft your commits, you'll use <code
+                  class="code-inline">git add &lt;FILENAME&gt;</code> to specify the files that you'd like to "stage"
+                for commit. Without adding any files, the command <code class="code-inline">git commit</code> won't
+                work. Git only looks to the staging area to find out what to commit. Staging, or adding, files, is
+                possible through the command line, and also possible with most Git interfaces like GitHub Desktop by
+                selecting the lines or files that you'd like to stage.</p>
+              <p>You can also use a handy command, <code class="code-inline">git add -p</code>, to walk through the
+                changes and separate them out, even if they're in the same file.</p>
+            </div>
+          </div>
+
+          <div>
+            <h3>How to Use Git Commit</h3>
+            <div>
+              <h3>Common usages and options for Git Commit</h3>
+              <ul>
+                <li><code class="code-inline">git commit</code>: This starts the commit process, but since it doesn't
+                  include a <code class="code-inline">-m</code> flag for the message, your default text editor will be
+                  opened for you to create the commit message. If you haven't configured anything, there's a good chance
+                  this will be VI or Vim. (To get out, press esc, then <code class="code-inline">:w</code>, and then
+                  Enter. :wink:)</li>
+                <li><code class="code-inline">git commit -m "descriptive commit message"</code>: This starts the commit
+                  process, and allows you to include the commit message at the same time.</li>
+                <li><code class="code-inline">git commit -am "descriptive commit message"</code>: In addition to
+                  including the commit message, this option allows you to skip the staging phase. The addition of <code
+                    class="code-inline">-a</code> will automatically stage any files that are already being tracked by
+                  Git (changes to files that you've committed before).</li>
+                <li><code class="code-inline">git commit --amend</code>: Replaces the most recent commit with a new
+                  commit. (More on this later!)</li>
+              </ul>
+              <p>To see all of the possible options you have with <code class="code-inline">git commit</code>, check out
+                <a href="https://git-scm.com/docs/git-commit">Git's documentation</a>.
+              </p>
+            </div>
+            <div>
+              <h3>How to Undo Commits in Git</h3>
+              <p>Sometimes, you may need to change history. You may need to undo a commit. If you find yourself in this
+                situation, there are a few very important things to remember:</p>
+              <ul>
+                <li>If you are "undoing" a commit that exists on the remote, you could create big problems for your
+                  collaborators</li>
+                <li>Undoing a commit on work that you only have locally is much safer</li>
+              </ul>
+            </div>
+            <div>
+              <h3>What can go wrong while changing history?</h3>
+              <p>Changing history for collaborators can be problematic in a few ways. Imagine - You and another
+                collaborator have the same repository, with the same history. But, they make a change that
+                <em>deletes</em> the most recent commit. They continue new commits from the commit directly before that.
+                Meanwhile, you keep working <em>with</em> the commit that the collaborator tried to delete. When they
+                push, they'll have to 'force push', which should show to them that they're changing history.
+                <strong>What do you think will happen when you try to push?</strong>
+              </p>
+              <p>In dramatic cases, Git may decide that the histories are too different and the projects are no longer
+                related. This is uncommon, but a big problem.</p>
+              <p>The most common result is that your <code class="code-inline">git push</code> would return the
+                "deleted" commit to shared history. (First, you would <code class="code-inline">git pull</code> if you
+                were working on the same branch, and then merge, but the results would be the same.) This means that
+                whatever was so important to delete is now back in the repository. A password, token, or large binary
+                file may return without ever alerting you.</p>
+            </div>
+            <div>
+              <h4><code class="code-inline">git revert</code></h4>
+              <p><code class="code-inline">git revert</code> is the safest way to change history with Git. Instead of
+                deleting existing commits, <code class="code-inline">git revert</code> looks at the changes introduced
+                in a specific commit, then applies the inverse of those changes in a new commit. It functions as an
+                "undo commit" command, without sacrificing the integrity of your repository's history. <strong><code
+                    class="code-inline">git revert</code> is always the recommended way to change history when it's
+                  possible</strong>.</p>
+            </div>
+            <div>
+              <h4><code class="code-inline">git reset</code></h4>
+              <p>Sometimes, a commit includes sensitive information and needs to actually be deleted. <code
+                  class="code-inline">git reset</code> is a very powerful command that may cause you to lose work. By
+                resetting, you move the <code class="code-inline">HEAD</code> pointer and the branch pointer to another
+                point in time - maybe making it seem like the commits in between never happened! Before using <code
+                  class="code-inline">git reset</code>:</p>
+              <ul>
+                <li>Make sure to talk with your team about any shared commits</li>
+                <li>Research the three types of reset to see which is right for you (--soft, --mixed, --hard)</li>
+                <li>Commit any work that you don't want to be lost intentionally - work that is committed can be gotten
+                  back, but uncommitted work cannot</li>
+              </ul>
+            </div>
+            <div>
+              <h4><code class="code-inline">git reflog</code></h4>
+              <p>If you're changing history and undoing commits, you should know about <code
+                  class="code-inline">git reflog</code>. If you get into trouble, the reflog could get you out of
+                trouble. The reflog is a log of every commit that <code class="code-inline">HEAD</code> has pointed to.
+                So, for example, if you use <code class="code-inline">git reset</code> and unintentionally lose commits,
+                you can find and access them with <code class="code-inline">git reflog</code>.</p>
+            </div>
+            <div>
+              <h3>Updating Commits With Git Commit Amend</h3>
+              <p>While <code class="code-inline">git commit --amend</code> does change history, it only changes the most
+                recent commit on your current branch. This can be an extremely useful command for commits that:</p>
+              <ul>
+                <li>Haven't been pushed to the remote yet</li>
+                <li>Have a spelling error in the commit message</li>
+                <li>Don't contain the changes that you'd like to contain</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <br>
+        <hr><br>
+
+        <div>
+          <h2>Git Push</h2>
+          <div>
+            <code class="code-block">git push</code>
+          </div>
+          <p><code class="code-inline">git push</code> uploads all local branch commits to the corresponding remote
+            branch.</p>
+          <div>
+            <h3>What Does <code class="code-inline">git push</code> Do?</h3>
+            <p><code class="code-inline">git push</code> updates the remote branch with local commits. It is one of the
+              four commands in Git that prompts interaction with the remote repository. You can also think of <code
+                class="code-inline">git push</code> as <em>update</em> or <em>publish</em>.</p>
+            <p>By default, <code class="code-inline">git push</code> only updates the corresponding branch on the
+              remote. So, if you are checked out to the <code class="code-inline">main</code> branch when you execute
+              <code class="code-inline">git push</code>, then only the <code class="code-inline">main</code> branch will
+              be updated. It's always a good idea to use <code class="code-inline">git status</code> to see what branch
+              you are on before pushing to the remote.
+            </p>
+          </div>
+          <div>
+            <h3>How to Use <code class="code-inline">git push</code></h3>
+            <p>After you make and commit changes locally, you can share them with the remote repository using <code
+                class="code-inline">git push</code>. Pushing changes to the remote makes your commits accessible to
+              others who you may be collaborating with. This will also update any open pull requests with the branch
+              that you're working on.</p>
+            <p>As best practice, it's important to run the <code class="code-inline">git pull</code> command before you
+              push any new changes to the remote branch. This will update your local branch with any new changes that
+              may have been pushed to the remote from other contributors. Pulling before you push can reduce the amount
+              of merge conflicts you create on GitHub - allowing you to resolve them locally before pushing your changes
+              to the remote branch.</p>
+          </div>
+          <div>
+            <h3>Common usages and options for <code class="code-inline">git push</code></h3>
+            <ul>
+              <li><code class="code-inline">git push -f</code>: Force a push that would otherwise be blocked, usually
+                because it will delete or overwrite existing commits <em>(Use with caution!)</em></li>
+              <li><code class="code-inline">git push -u origin [branch]</code>: Useful when pushing a new branch, this
+                creates an upstream tracking branch with a lasting relationship to your local branch</li>
+              <li><code class="code-inline">git push --all</code>: Push all branches</li>
+              <li><code class="code-inline">git push --tags</code>: Publish tags that aren't yet in the remote
+                repository</li>
+            </ul>
+            <p>You can see all of the options with <code class="code-inline">git push</code> in <a
+                href="https://git-scm.com/docs/git-push">git-scm's documentation</a>.</p>
+          </div>
+          <div>
+            <h3>Why can't I push?</h3>
+            <p>If you are trying to <code class="code-inline">git push</code> but are running into problems, there are a
+              few common solutions.</p>
+          </div>
+          <div>
+            <h4>Check your branch</h4>
+            <p>Check what branch you are currently on with <code class="code-inline">git status</code>. If you are
+              working on a protected branch, like <code class="code-inline">main</code>, you may be unable to push
+              commits directly to the remote. If this happens to you, it's OK! You can fix this a few ways.</p>
+          </div>
+          <div>
+            <h5>Work was not yet on any branch</h5>
+            <ol>
+              <li>Create and checkout to a new branch from your current commit: <code
+                  class="code-inline">git checkout -b [branchname]</code></li>
+              <li>Then, push the new branch up to the remote: <code
+                  class="code-inline">git push -u origin [branchname]</code></li>
+            </ol>
+          </div>
+          <div>
+            <h5>Accidentally committed to the wrong branch</h5>
+            <ol>
+              <li>Checkout to the branch that you intended to commit to: <code
+                  class="code-inline">git checkout [branchname]</code></li>
+              <li>Merge the commits from the branch that you <em>did</em> accidentally commit to: <code
+                  class="code-inline">git merge [main]</code></li>
+              <li>Push your changes to the remote: <code class="code-inline">git push</code></li>
+              <li>Fix the other branch by checking out to that branch, finding what commit it <em>should</em> be pointed
+                to, and using <code class="code-inline">git reset --hard</code> to correct the branch pointer</li>
+            </ol>
+          </div>
+          <div>
+            <h3>Related Terms</h3>
+            <ul>
+              <li><code class="code-inline">git commit -m "descriptive message"</code>: Records file snapshots
+                permanently in version history.</li>
+              <li><code class="code-inline">git clone [url]</code>: Clone (download) a repository that already exists on
+                GitHub, including all of the files, branches, and commits.</li>
+              <li><code class="code-inline">git status</code>: Always a good idea, this command shows you what branch
+                you're on, what files are in the working or staging directory, and any other important information.</li>
+              <li><code class="code-inline">git pull</code>: Updates your current local working branch with all new
+                commits from the corresponding remote branch on GitHub. <code class="code-inline">git pull</code> is a
+                combination of <code class="code-inline">git fetch</code> and <code
+                  class="code-inline">git merge</code>.</li>
+            </ul>
+          </div>
+        </div>
+
+        <br>
+        <hr><br>
+
+        <div>
+          <h2>Git Pull</h2>
+          <p><code class="code-inline">git pull</code> updates your current local working branch, and all of the remote
+            tracking branches. It's a good idea to run <code class="code-inline">git pull</code> regularly on the
+            branches you are working on locally.</p>
+          <p>Without <code class="code-inline">git pull</code>, (or the effect of it,) your local branch wouldn't have
+            any of the updates that are present on the remote.</p>
+          <div>
+            <h4>What Does <code class="code-inline">git pull</code> Do?</h4>
+            <div>
+              <code class="code-block">git pull</code>
+            </div>
+            <p><code class="code-inline">git pull</code> is one of the 4 remote operations within Git. Without running
+              <code class="code-inline">git pull</code>, your local repository will never be updated with changes from
+              the remote. <code class="code-inline">git pull</code> should be used every day you interact with a
+              repository with a remote, at the minimum. That's why <code class="code-inline">git pull</code> is one of
+              the most used Git commands.
+            </p>
+            <div>
+              <h4><code class="code-inline">git pull</code> and <code class="code-inline">git fetch</code></h4>
+              <p><code class="code-inline">git pull</code>, a combination of <code class="code-inline">git fetch</code>
+                + <code class="code-inline">git merge</code>, updates some parts of your local repository with changes
+                from the remote repository. To understand what is and isn't affected by <code
+                  class="code-inline">git pull</code>, you need to first understand the concept of remote tracking
+                branches. When you clone a repository, you clone one working branch, <code
+                  class="code-inline">main</code>, and all of the remote tracking branches. <code
+                  class="code-inline">git fetch</code> updates the remote tracking branches. <code
+                  class="code-inline">git merge</code> will update your current branch with any new commits on the
+                remote tracking branch.</p>
+              <p><code class="code-inline">git pull</code> is the most common way to update your repository.</p>
+              <p>However, you may want to use <code class="code-inline">git fetch</code> instead. One reason to do this
+                may be that you expect conflicts. Conflicts can occur in this way if you have new local commits, and new
+                commits on the remote. Just like a merge conflict that would happen between two different branches,
+                these two different lines of history could contain changes to the same parts of the same file. If you
+                first operate <code class="code-inline">git fetch</code>, the merge won't be initiated, and you won't be
+                prompted to solve the conflict. This gives you the flexibility to resolve the conflict later without the
+                need of network connectivity.</p>
+              <p>Another reason you may want to run <code class="code-inline">git fetch</code> is to update to all
+                remote tracking branches before losing network connectivity. If you run <code
+                  class="code-inline">git fetch</code>, and then later try to run <code
+                  class="code-inline">git pull</code> without any network connectivity, the <code
+                  class="code-inline">git fetch</code> portion of the <code class="code-inline">git pull</code>
+                operation will fail.</p>
+              <p>If you do use <code class="code-inline">git fetch</code> instead of <code
+                  class="code-inline">git pull</code>, make sure you remember to <code
+                  class="code-inline">git merge</code>. Merging the remote tracking branch into your own branch ensures
+                you will be working with any updates or changes.</p>
+            </div>
+          </div>
+          <div>
+            <h3>How to Use <code class="code-inline">git pull</code></h3>
+            <div>
+              <h4>Common usages and options for <code class="code-inline">git pull</code></h4>
+              <ul>
+                <li><code class="code-inline">git pull</code>: Update your local working branch with commits from the
+                  remote, <em>and</em> update all remote tracking branches.</li>
+                <li><code class="code-inline">git pull --rebase</code>: Update your local working branch with commits
+                  from the remote, but rewrite history so any local commits occur after all new commits coming from the
+                  remote, avoiding a merge commit.</li>
+                <li><code class="code-inline">git pull --force</code>: This option allows you to force a fetch of a
+                  specific remote tracking branch when using the <code>&lt;refspec&gt;</code> option that would
+                  otherwise not be fetched due to conflicts. To force Git to overwrite your current branch to match the
+                  remote tracking branch, read below about using <code class="code-inline">git reset</code>.</li>
+                <li><code class="code-inline">git pull --all</code>: Fetch <em>all</em> remotes - this is handy if you
+                  are working on a fork or in another use case with multiple remotes.</li>
+              </ul>
+              <p>You can see all of the many options with <code class="code-inline">git pull</code> in <a
+                  href="https://git-scm.com/docs/git-pull">git-scm's documentation</a>.</p>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <br>
+    <section class="main-section" id="Intro_to_HTML5_CSS_JS">
+      <header class="title">Introduction to HTML5, CSS, and JavaScript</header>
+      <hr>
+      <article>
+        <h3>HTML5 (Hypertext Markup Language):</h3>
+        <ul>
+          <li>HTML is the standard markup language used to create the structure and content of web pages.</li>
+          <li>HTML5 is the latest version of HTML, and it introduces new features and improvements over its
+            predecessors.</li>
+          <li>It provides tags and attributes that define the various elements on a web page, such as headings,
+            paragraphs, images, links, forms, and more.</li>
+          <li>HTML5 also includes new elements like <code class="code-inline">&lt;header&gt;</code>, <code
+              class="code-inline">&lt;nav&gt;</code>, <code class="code-inline">&lt;article&gt;</code>, <code
+              class="code-inline">&lt;section&gt;</code>, <code class="code-inline">&lt;footer&gt;</code>, which help in
+            structuring the content more semantically.</li>
+        </ul>
+        <p>Example of a simple HTML5 document structure:</p>
+
+        <pre>
+          <code class="code-block-ws">
+            &lt;!DOCTYPE html&gt;
+            &lt;html lang="en"&gt;
+        
+            &lt;head&gt;
+              &lt;meta charset="UTF-8"&gt;
+              &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+              &lt;title&gt;My First Web Page&lt;/title&gt;
+            &lt;/head&gt;
+        
+            &lt;body&gt;
+              &lt;header&gt;
+                &lt;h1&gt;Welcome to My Website&lt;/h1&gt;
+              &lt;/header&gt;
+              &lt;nav&gt;
+                &lt;ul&gt;
+                  &lt;li&gt;&lt;a href="#home"&gt;Home&lt;/a&gt;&lt;/li&gt;
+                  &lt;li&gt;&lt;a href="#about"&gt;About&lt;/a&gt;&lt;/li&gt;
+                  &lt;li&gt;&lt;a href="#contact"&gt;Contact&lt;/a&gt;&lt;/li&gt;
+                &lt;/ul&gt;
+              &lt;/nav&gt;
+              &lt;section&gt;
+                &lt;h2&gt;About Us&lt;/h2&gt;
+                &lt;p&gt;This is a brief description of our website...&lt;/p&gt;
+              &lt;/section&gt;
+              &lt;footer&gt;
+                &lt;p&gt;&copy; 2024 My Website. All rights reserved.&lt;/p&gt;
+              &lt;/footer&gt;
+            &lt;/body&gt;
+        
+            &lt;/html&gt;
+          </code>
+        </pre>
+
+        <br>
+        <hr><br>
+        <h3>CSS (Cascading Style Sheets):</h3>
+        <ul>
+          <li>CSS is used to style and layout the visual presentation of HTML documents.</li>
+          <li>It allows you to control the colors, fonts, spacing, and positioning of elements on a web page.</li>
+          <li>CSS is applied either internally within an HTML document, externally in a separate stylesheet file, or
+            inline
+            within HTML tags.</li>
+        </ul>
+        <p>Example of a simple CSS style rule:</p>
+        <pre><code class="code-block-ws">
+          body {
+              font-family: 'Arial', sans-serif;
+              background-color: #f4f4f4;
+          }
+          
+          h1 {
+              color: #333;
+          }
+          
+          nav ul {
+              list-style: none;
+              margin: 0;
+              padding: 0;
+          }
+          
+          footer {
+              background-color: #333;
+              color: #fff;
+              text-align: center;
+              padding: 10px;
+          }
+          </code></pre>
+
+        <br>
+        <hr><br>
+        <div>
+          <h3>JavaScript:</h3>
+          <ul>
+            <li>JavaScript is a scripting language that enables dynamic and interactive behavior on web pages.</li>
+            <li>It can manipulate the content and structure of HTML, handle user input, and communicate with servers
+              (Ajax).</li>
+            <li>JavaScript is commonly used to create features like sliders, form validation, pop-up messages, and more.
+            </li>
+            <li>It can be included directly within HTML documents or linked externally.</li>
+          </ul>
+          <p>Example of a simple JavaScript script:</p>
+          <pre><code class="code-block">
+        // Simple alert when the page loads
+        window.onload = function() {
+            alert("Welcome to our website!");
+        }
+        
+        // Example of handling a button click
+        function displayMessage() {
+            var message = "Button clicked!";
+            console.log(message);
+            alert(message);
+        }
+            </code></pre>
+        </div>
+        <p>
+          These three technologies (HTML5, CSS, and JavaScript) work together to create modern, dynamic, and visually
+          appealing websites and web applications. As you progress in web development, you'll likely use frameworks and
+          libraries that build upon these core technologies, such as React, Angular, or Vue for JavaScript, and
+          Bootstrap or Tailwind CSS for styling.
+        </p>
+      </article>
+    </section>
+
+    <br>
+    <section class="main-section" id="HTML_Elements">
+      <header class="title">HTML Elements</header>
+      <hr>
+      <article>
+        <h2>HTML Tags Ordered Alphabetically</h2>
+
+        <table class="table-container">
+          <tr>
+            <th style="width:25%">Tag</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td><a href="tag_comment.asp">&lt;!--...--&gt;</a></td>
+            <td>Defines a comment</td>
+          </tr>
+          <tr>
+            <td><a href="tag_doctype.asp">&lt;!DOCTYPE&gt;</a>&nbsp;</td>
+            <td>Defines the document type</td>
+          </tr>
+          <tr>
+            <td><a href="tag_a.asp">&lt;a&gt;</a></td>
+            <td>Defines a hyperlink</td>
+          </tr>
+          <tr>
+            <td><a href="tag_abbr.asp">&lt;abbr&gt;</a></td>
+            <td>Defines an abbreviation or an acronym</td>
+          </tr>
+          <tr>
+            <td><a href="tag_acronym.asp" class="notsupported">&lt;acronym&gt;</a></td>
+            <td><span class="deprecated">Not supported in HTML5. Use <a href="tag_abbr.asp">&lt;abbr&gt;</a>
+                instead.<br></span>Defines an acronym</td>
+          </tr>
+          <tr>
+            <td><a href="tag_address.asp">&lt;address&gt;</a></td>
+            <td>Defines contact information for the author/owner of a document</td>
+          </tr>
+          <tr>
+            <td><a href="tag_applet.asp" class="notsupported">&lt;applet&gt;</a></td>
+            <td><span class="deprecated">Not supported in HTML5. Use <a href="tag_embed.asp">&lt;embed&gt;</a> or <a
+                  href="tag_object.asp">&lt;object&gt;</a> instead.<br></span>Defines an embedded applet</td>
+          </tr>
+          <tr>
+            <td><a href="tag_area.asp">&lt;area&gt;</a></td>
+            <td>Defines an area inside an image map</td>
+          </tr>
+          <tr>
+            <td class="html5badge"><a href="tag_article.asp">&lt;article&gt;</a></td>
+            <td>Defines an article</td>
+          </tr>
+          <tr>
+            <td class="html5badge"><a href="tag_aside.asp">&lt;aside&gt;</a></td>
+            <td>Defines content aside from the page content</td>
+          </tr>
+          <tr>
+            <td class="html5badge"><a href="tag_audio.asp">&lt;audio&gt;</a></td>
+            <td>Defines embedded sound content</td>
+          </tr>
+          <tr>
+            <td><a href="tag_b.asp">&lt;b&gt;</a></td>
+            <td>Defines bold text</td>
+          </tr>
+          <tr>
+            <td><a href="tag_base.asp">&lt;base&gt;</a></td>
+            <td>Specifies the base URL/target for all relative URLs in a document</td>
+          </tr>
+          <tr>
+            <td><a href="tag_basefont.asp" class="notsupported">&lt;basefont&gt;</a></td>
+            <td><span class="deprecated">Not supported in HTML5. Use CSS instead.<br></span>Specifies a default color,
+              size, and font for all text in a document</td>
+          </tr>
+          <tr>
+            <td><a href="tag_bdi.asp">&lt;bdi&gt;</a></td>
+            <td>Isolates a part of text that might be formatted in a different direction
+              from other text outside it</td>
+          </tr>
+          <tr>
+            <td><a href="tag_bdo.asp">&lt;bdo&gt;</a></td>
+            <td>Overrides the current text direction</td>
+          </tr>
+          <tr>
+            <td><a href="tag_big.asp" class="notsupported">&lt;big&gt;</a></td>
+            <td><span class="deprecated">Not supported in HTML5. Use CSS instead.<br></span>Defines big text</td>
+          </tr>
+          <tr>
+            <td><a href="tag_blockquote.asp">&lt;blockquote&gt;</a></td>
+            <td>Defines a section that is quoted from another source</td>
+          </tr>
+          <tr>
+            <td><a href="tag_body.asp">&lt;body&gt;</a></td>
+            <td>Defines the document's body</td>
+          </tr>
+          <tr>
+            <td><a href="tag_br.asp">&lt;br&gt;</a></td>
+            <td>Defines a single line break</td>
+          </tr>
+          <tr>
+            <td><a href="tag_button.asp">&lt;button&gt;</a></td>
+            <td>Defines a clickable button</td>
+          </tr>
+          <tr>
+            <td><a href="tag_canvas.asp">&lt;canvas&gt;</a></td>
+            <td>Used to draw graphics, on the fly, via scripting (usually JavaScript)</td>
+          </tr>
+          <tr>
+            <td><a href="tag_caption.asp">&lt;caption&gt;</a></td>
+            <td>Defines a table caption</td>
+          </tr>
+          <tr>
+            <td><a href="tag_center.asp" class="notsupported">&lt;center&gt;</a></td>
+            <td><span class="deprecated">Not supported in HTML5. Use CSS instead.<br></span>Defines centered text</td>
+          </tr>
+          <tr>
+            <td><a href="tag_cite.asp">&lt;cite&gt;</a></td>
+            <td>Defines the title of a work</td>
+          </tr>
+          <tr>
+            <td><a href="tag_code.asp">&lt;code&gt;</a></td>
+            <td>Defines a piece of computer code</td>
+          </tr>
+          <tr>
+            <td><a href="tag_col.asp">&lt;col&gt;</a></td>
+            <td>Specifies column properties for each column within a &lt;colgroup&gt; element&nbsp;</td>
+          </tr>
+          <tr>
+            <td><a href="tag_colgroup.asp">&lt;colgroup&gt;</a></td>
+            <td>Specifies a group of one or more columns in a table for formatting</td>
+          </tr>
+          <tr>
+            <td><a href="tag_data.asp">&lt;data&gt;</a></td>
+            <td>Adds a machine-readable
+              translation of a given content</td>
+          </tr>
+          <tr>
+            <td><a href="tag_datalist.asp">&lt;datalist&gt;</a></td>
+            <td>Specifies a list of pre-defined options for input controls</td>
+          </tr>
+          <tr>
+            <td><a href="tag_dd.asp">&lt;dd&gt;</a></td>
+            <td>Defines a description/value of a term in a description list</td>
+          </tr>
+          <tr>
+            <td><a href="tag_del.asp">&lt;del&gt;</a></td>
+            <td>Defines text that has been deleted from a document</td>
+          </tr>
+          <tr>
+            <td><a href="tag_details.asp">&lt;details&gt;</a></td>
+            <td>Defines additional details that the user can view or hide</td>
+          </tr>
+          <tr>
+            <td><a href="tag_dfn.asp">&lt;dfn&gt;</a></td>
+            <td>Specifies a term that is going to be defined within the content</td>
+          </tr>
+          <tr>
+            <td><a href="tag_dialog.asp">&lt;dialog&gt;</a></td>
+            <td>Defines a dialog box or window</td>
+          </tr>
+          <tr>
+            <td><a href="tag_dir.asp" class="notsupported">&lt;dir&gt;</a></td>
+            <td><span class="deprecated">Not supported in HTML5. Use <a href="tag_ul.asp">&lt;ul&gt;</a>
+                instead.<br></span>Defines a directory list</td>
+          </tr>
+          <tr>
+            <td><a href="tag_div.asp">&lt;div&gt;</a></td>
+            <td>Defines a section in a document</td>
+          </tr>
+          <tr>
+            <td><a href="tag_dl.asp">&lt;dl&gt;</a></td>
+            <td>Defines a description list</td>
+          </tr>
+          <tr>
+            <td><a href="tag_dt.asp">&lt;dt&gt;</a></td>
+            <td>Defines a term/name in a description list</td>
+          </tr>
+          <tr>
+            <td><a href="tag_em.asp">&lt;em&gt;</a></td>
+            <td>Defines emphasized text&nbsp;</td>
+          </tr>
+          <tr>
+            <td><a href="tag_embed.asp">&lt;embed&gt;</a></td>
+            <td>Defines a container for an external application</td>
+          </tr>
+          <tr>
+            <td><a href="tag_fieldset.asp">&lt;fieldset&gt;</a></td>
+            <td>Groups related elements in a form</td>
+          </tr>
+          <tr>
+            <td class="html5badge"><a href="tag_figcaption.asp">&lt;figcaption&gt;</a></td>
+            <td>Defines a caption for a &lt;figure&gt; element</td>
+          </tr>
+          <tr>
+            <td class="html5badge"><a href="tag_figure.asp">&lt;figure&gt;</a></td>
+            <td>Specifies self-contained content</td>
+          </tr>
+          <tr>
+            <td><a href="tag_font.asp" class="notsupported">&lt;font&gt;</a></td>
+            <td><span class="deprecated">Not supported in HTML5. Use CSS instead.<br></span>Defines font, color, and
+              size for text</td>
+          </tr>
+          <tr>
+            <td><a href="tag_footer.asp">&lt;footer&gt;</a></td>
+            <td>Defines a footer for a document or section</td>
+          </tr>
+          <tr>
+            <td><a href="tag_form.asp">&lt;form&gt;</a></td>
+            <td>Defines an HTML form for user input</td>
+          </tr>
+          <tr>
+            <td><a href="tag_frame.asp" class="notsupported">&lt;frame&gt;</a></td>
+            <td><span class="deprecated">Not supported in HTML5.<br></span>Defines a window (a frame) in a frameset</td>
+          </tr>
+          <tr>
+            <td><a href="tag_frameset.asp" class="notsupported">&lt;frameset&gt;</a></td>
+            <td><span class="deprecated">Not supported in HTML5.<br></span>Defines a set of frames</td>
+          </tr>
+          <tr>
+            <td><a href="tag_hn.asp">&lt;h1&gt; to &lt;h6&gt;</a></td>
+            <td> Defines HTML headings</td>
+          </tr>
+          <tr>
+            <td><a href="tag_head.asp">&lt;head&gt;</a></td>
+            <td>Contains metadata/information for the document</td>
+          </tr>
+          <tr>
+            <td><a href="tag_header.asp">&lt;header&gt;</a></td>
+            <td>Defines a header for a document or section</td>
+          </tr>
+          <tr>
+            <td><a href="tag_hgroup.asp">&lt;hgroup&gt;</a></td>
+            <td>Defines a header and related content</td>
+          </tr>
+          <tr>
+            <td><a href="tag_hr.asp">&lt;hr&gt;</a></td>
+            <td> Defines a thematic change in the content</td>
+          </tr>
+          <tr>
+            <td><a href="tag_html.asp">&lt;html&gt;</a></td>
+            <td>Defines the root of an HTML document</td>
+          </tr>
+          <tr>
+            <td><a href="tag_i.asp">&lt;i&gt;</a></td>
+            <td>Defines a part of text in an alternate voice or mood</td>
+          </tr>
+          <tr>
+            <td><a href="tag_iframe.asp">&lt;iframe&gt;</a></td>
+            <td>Defines an inline frame</td>
+          </tr>
+          <tr>
+            <td><a href="tag_img.asp">&lt;img&gt;</a></td>
+            <td>Defines an image</td>
+          </tr>
+          <tr>
+            <td><a href="tag_input.asp">&lt;input&gt;</a></td>
+            <td>Defines an input control</td>
+          </tr>
+          <tr>
+            <td><a href="tag_ins.asp">&lt;ins&gt;</a></td>
+            <td>Defines a text that has been inserted into a document</td>
+          </tr>
+          <tr>
+            <td><a href="tag_kbd.asp">&lt;kbd&gt;</a></td>
+            <td>Defines keyboard input</td>
+          </tr>
+          <tr>
+            <td><a href="tag_label.asp">&lt;label&gt;</a></td>
+            <td>Defines a label&nbsp;for an &lt;input&gt; element</td>
+          </tr>
+          <tr>
+            <td><a href="tag_legend.asp">&lt;legend&gt;</a></td>
+            <td>Defines a caption for a &lt;fieldset&gt; element</td>
+          </tr>
+          <tr>
+            <td><a href="tag_li.asp">&lt;li&gt;</a></td>
+            <td>Defines a list item</td>
+          </tr>
+          <tr>
+            <td><a href="tag_link.asp">&lt;link&gt;</a></td>
+            <td>Defines the relationship between a document and an external resource (most
+              used to link to style sheets)</td>
+          </tr>
+          <tr>
+            <td><a href="tag_main.asp">&lt;main&gt;</a></td>
+            <td>Specifies the main content of a document</td>
+          </tr>
+          <tr>
+            <td><a href="tag_map.asp">&lt;map&gt;</a></td>
+            <td>Defines an image map</td>
+          </tr>
+          <tr>
+            <td><a href="tag_mark.asp">&lt;mark&gt;</a></td>
+            <td>Defines marked/highlighted text</td>
+          </tr>
+          <tr>
+            <td><a href="tag_menu.asp">&lt;menu&gt;</a></td>
+            <td>Defines an unordered list</td>
+          </tr>
+          <tr>
+            <td><a href="tag_meta.asp">&lt;meta&gt;</a></td>
+            <td>Defines metadata about an HTML document</td>
+          </tr>
+          <tr>
+            <td><a href="tag_meter.asp">&lt;meter&gt;</a></td>
+            <td>Defines a scalar measurement within a known range (a gauge)</td>
+          </tr>
+          <tr>
+            <td><a href="tag_nav.asp">&lt;nav&gt;</a></td>
+            <td>Defines navigation links</td>
+          </tr>
+          <tr>
+            <td><a href="tag_noframes.asp" class="notsupported">&lt;noframes&gt;</a></td>
+            <td><span class="deprecated">Not supported in HTML5.<br></span>Defines an alternate content for users that
+              do not support frames</td>
+          </tr>
+          <tr>
+            <td><a href="tag_noscript.asp">&lt;noscript&gt;</a></td>
+            <td>Defines an alternate content for users that do not support
+              client-side scripts</td>
+          </tr>
+          <tr>
+            <td><a href="tag_object.asp">&lt;object&gt;</a></td>
+            <td>Defines a container for an external application</td>
+          </tr>
+          <tr>
+            <td><a href="tag_ol.asp">&lt;ol&gt;</a></td>
+            <td>Defines an ordered list</td>
+          </tr>
+          <tr>
+            <td><a href="tag_optgroup.asp">&lt;optgroup&gt;</a></td>
+            <td>Defines a group of related options in a drop-down list</td>
+          </tr>
+          <tr>
+            <td><a href="tag_option.asp">&lt;option&gt;</a></td>
+            <td>Defines an option in a drop-down list</td>
+          </tr>
+          <tr>
+            <td><a href="tag_output.asp">&lt;output&gt;</a></td>
+            <td>Defines the result of a calculation</td>
+          </tr>
+          <tr>
+            <td><a href="tag_p.asp">&lt;p&gt;</a></td>
+            <td>Defines a paragraph</td>
+          </tr>
+          <tr>
+            <td><a href="tag_param.asp">&lt;param&gt;</a></td>
+            <td>Defines a parameter for an object</td>
+          </tr>
+          <tr>
+            <td><a href="tag_picture.asp">&lt;picture&gt;</a></td>
+            <td>Defines a container for multiple image resources</td>
+          </tr>
+          <tr>
+            <td><a href="tag_pre.asp">&lt;pre&gt;</a></td>
+            <td>Defines preformatted text</td>
+          </tr>
+          <tr>
+            <td><a href="tag_progress.asp">&lt;progress&gt;</a></td>
+            <td>Represents the progress of a task</td>
+          </tr>
+          <tr>
+            <td><a href="tag_q.asp">&lt;q&gt;</a></td>
+            <td>Defines a short quotation</td>
+          </tr>
+          <tr>
+            <td><a href="tag_rp.asp">&lt;rp&gt;</a></td>
+            <td>Defines what to show in browsers that do not support ruby annotations</td>
+          </tr>
+          <tr>
+            <td><a href="tag_rt.asp">&lt;rt&gt;</a></td>
+            <td>Defines an explanation/pronunciation of characters (for East Asian
+              typography)</td>
+          </tr>
+          <tr>
+            <td><a href="tag_ruby.asp">&lt;ruby&gt;</a></td>
+            <td>Defines a ruby annotation (for East Asian typography)</td>
+          </tr>
+          <tr>
+            <td><a href="tag_s.asp">&lt;s&gt;</a></td>
+            <td>Defines text that is no longer correct</td>
+          </tr>
+          <tr>
+            <td><a href="tag_samp.asp">&lt;samp&gt;</a></td>
+            <td>Defines sample output from a computer program</td>
+          </tr>
+          <tr>
+            <td><a href="tag_script.asp">&lt;script&gt;</a></td>
+            <td>Defines a client-side script</td>
+          </tr>
+          <tr>
+            <td><a href="tag_search.asp">&lt;search&gt;</a></td>
+            <td>Defines a search section</td>
+          </tr>
+          <tr>
+            <td><a href="tag_section.asp">&lt;section&gt;</a></td>
+            <td>Defines a section in a document</td>
+          </tr>
+          <tr>
+            <td><a href="tag_select.asp">&lt;select&gt;</a></td>
+            <td>Defines a drop-down list</td>
+          </tr>
+          <tr>
+            <td><a href="tag_small.asp">&lt;small&gt;</a></td>
+            <td>Defines smaller text</td>
+          </tr>
+          <tr>
+            <td><a href="tag_source.asp">&lt;source&gt;</a></td>
+            <td>Defines multiple media resources for media elements (&lt;video&gt; and &lt;audio&gt;)</td>
+          </tr>
+          <tr>
+            <td><a href="tag_span.asp">&lt;span&gt;</a></td>
+            <td>Defines a section in a document</td>
+          </tr>
+          <tr>
+            <td><a href="tag_strike.asp" class="notsupported">&lt;strike&gt;</a></td>
+            <td><span class="deprecated">Not supported in HTML5. Use <a href="tag_del.asp">&lt;del&gt;</a> or <a
+                  href="tag_s.asp">&lt;s&gt;</a> instead.<br></span>Defines strikethrough text</td>
+          </tr>
+          <tr>
+            <td><a href="tag_strong.asp">&lt;strong&gt;</a></td>
+            <td>Defines important text</td>
+          </tr>
+          <tr>
+            <td><a href="tag_style.asp">&lt;style&gt;</a></td>
+            <td>Defines style information for a document</td>
+          </tr>
+          <tr>
+            <td><a href="tag_sub.asp">&lt;sub&gt;</a></td>
+            <td>Defines subscripted text</td>
+          </tr>
+          <tr>
+            <td><a href="tag_summary.asp">&lt;summary&gt;</a></td>
+            <td>Defines a visible heading for a &lt;details&gt; element</td>
+          </tr>
+          <tr>
+            <td><a href="tag_sup.asp">&lt;sup&gt;</a></td>
+            <td>Defines superscripted text</td>
+          </tr>
+          <tr>
+            <td><a href="tag_svg.asp">&lt;svg&gt;</a></td>
+            <td>Defines a container for SVG graphics</td>
+          </tr>
+          <tr>
+            <td><a href="tag_table.asp">&lt;table&gt;</a></td>
+            <td>Defines a table</td>
+          </tr>
+          <tr>
+            <td><a href="tag_tbody.asp">&lt;tbody&gt;</a></td>
+            <td>Groups the body content in a table</td>
+          </tr>
+          <tr>
+            <td><a href="tag_td.asp">&lt;td&gt;</a></td>
+            <td>Defines a cell in a table</td>
+          </tr>
+          <tr>
+            <td><a href="tag_template.asp">&lt;template&gt;</a></td>
+            <td>Defines a container for content that should be hidden when the page loads</td>
+          </tr>
+          <tr>
+            <td><a href="tag_textarea.asp">&lt;textarea&gt;</a></td>
+            <td>Defines a multiline input control (text area)</td>
+          </tr>
+          <tr>
+            <td><a href="tag_tfoot.asp">&lt;tfoot&gt;</a></td>
+            <td>Groups the footer content in a table</td>
+          </tr>
+          <tr>
+            <td><a href="tag_th.asp">&lt;th&gt;</a></td>
+            <td>Defines a header cell in a table</td>
+          </tr>
+          <tr>
+            <td><a href="tag_thead.asp">&lt;thead&gt;</a></td>
+            <td>Groups the header content in a table</td>
+          </tr>
+          <tr>
+            <td><a href="tag_time.asp">&lt;time&gt;</a></td>
+            <td>Defines a specific time (or datetime)</td>
+          </tr>
+          <tr>
+            <td><a href="tag_title.asp">&lt;title&gt;</a></td>
+            <td>Defines a title for the document</td>
+          </tr>
+          <tr>
+            <td><a href="tag_tr.asp">&lt;tr&gt;</a></td>
+            <td>Defines a row in a table</td>
+          </tr>
+          <tr>
+            <td><a href="tag_track.asp">&lt;track&gt;</a></td>
+            <td>Defines text tracks for media elements (&lt;video&gt; and &lt;audio&gt;)</td>
+          </tr>
+          <tr>
+            <td><a class="notsupported" href="tag_tt.asp">&lt;tt&gt;</a></td>
+            <td><span class="deprecated">Not supported in HTML5. Use CSS instead.<br></span>Defines teletype text</td>
+          </tr>
+          <tr>
+            <td><a href="tag_u.asp">&lt;u&gt;</a></td>
+            <td>Defines some text that is unarticulated and styled differently from normal
+              text</td>
+          </tr>
+          <tr>
+            <td><a href="tag_ul.asp">&lt;ul&gt;</a></td>
+            <td>Defines an unordered list</td>
+          </tr>
+          <tr>
+            <td><a href="tag_var.asp">&lt;var&gt;</a></td>
+            <td>Defines a variable</td>
+          </tr>
+          <tr>
+            <td><a href="tag_video.asp">&lt;video&gt;</a></td>
+            <td>Defines embedded video content</td>
+          </tr>
+          <tr>
+            <td><a href="tag_wbr.asp">&lt;wbr&gt;</a></td>
+            <td>Defines a possible line-break</td>
+          </tr>
+        </table>
+        </div>
+      </article>
+    </section>
+
+    <br>
+    <section class="main-section" id="Intro_CSS">
+      <header class="title">Introducing Cascading Style Sheets</header>
+      <hr>
+      <article>
+        <div>
+          <strong class="sub-title-1">Recognizing the Benefits of Using CSS</strong>
+          <p>The Evolution of CSS</p>
+          <ul>
+            <li>CSS was developed to standardize display information</li>
+            <li>CSS was slow to be supported by browsers</li>
+            <li>Newer browsers offer more complete support</li>
+            <li>Latest release is CSS3</li>
+            <li>CSS3 is not yet evenly supported</li>
+          </ul>
+          <hr>
+          <strong class="sub-title-1">CSS Style Rules</strong>
+          <ul>
+            <li>In CSS, style rules express the style characteristics for an HTML element</li>
+            <li>A set of style rules is called a style sheet</li>
+            <li>Style rules are easy to write and interpret</li>
+            <li>Style rules are composed of two parts: a selector and a declaration</li>
+            <li>The selector determines the element to which the rule is applied</li>
+            <li>The declaration details the exact property values</li>
+          </ul>
+          <hr>
+          <strong class="sub-title-1">CSS Style Rules</strong>
+          <ul>
+            <li>The declaration contains a property and a value</li>
+            <li>The property is a quality or characteristic</li>
+            <li>The precise specification of the property is contained in the value</li>
+            <li>CSS includes a wide variety of different properties, each with a specific number of values</li>
+          </ul>
+          <hr>
+          <strong class="sub-title-1">Combining CSS Style Rules with HTML</strong>
+          <p>You can combine CSS with HTML in three ways:</p>
+          <ul>
+            <li>Inline style</li>
+            <li>Internal style sheet</li>
+            <li>External style sheet</li>
+          </ul>
+          <hr>
+          <strong class="sub-title-1">Using External Style Sheets</strong>
+          <ul>
+            <li>External style sheets let you specify rules for multiple Web pages</li>
+            <li>These are text documents that contain style rules</li>
+            <li>External style sheets have a .css extension</li>
+
+          </ul>
+          <hr>
+          <strong class="sub-title-1" p>Linking to an External Style Sheet</strong>
+          <ul>
+            <li>The link element lets you specify an external style sheet</li>
+            <li>It is used within the section of a document</li>
+            <code class="code-block-ws">&lt;link href="styles.css" rel="stylesheet" type="text/css" /&gt;</code>
+          </ul>
+          <hr>
+          <strong class="sub-title-1">Using Internal Style Sheets</strong>
+          <ul>
+            <li>Internal style sheets are contained within the &lt;style&gt; element</li>
+            <li>The style element is contained within the &lt;head&gt; section of the document</li>
+            <li>Style rules contained in an internal style sheet only affect the document in which they reside</li>
+            <code class="code-block-ws">
+                &lt;head&gt;
+                  &lt;title&gt;Sample Document&lt;/title&gt;
+                  &lt;style type="text/css"&gt;
+                  h1 {color: red;}
+                  &lt;/style&gt;
+                &lt;/head&gt;</code>
+          </ul>
+          <hr>
+          <strong class="sub-title-1">Using Inline Styles</strong>
+          <ul>
+            <li>You can define styles for a single element with the style attribute</li>
+            <li>The style attribute can be used to override a style that was set at a higher level</li>
+            <li>The style attribute is useful for testing styles during development</li>
+            <li>This is the least used method of applying CSS styles</li>
+            <code class="code-block-ws">&lt;h1 style="color:black"&gt;Some Text&lt;/h1&gt;</code>
+          </ul>
+          <hr>
+          <strong class="sub-title-1">Writing Clean CSS Code</strong>
+          <ul>
+            <li>Write CSS code that is consistent and easy to read</li>
+            <li>Correct but hard-to-read:</li>
+            <code
+              class="code-block-ws">p {font-family: arial, helvetica, sans-serif; font-size: 85%; line-height: 110%; margin-left: 30px;}</code>
+            <li>Better:</li>
+            <code class="code-block-ws">p {
+              font-family: arial, helvetica, sans-serif;
+              font-size: 85%;
+              line-height: 110%;
+              margin-left: 30px;
+          }</code>
+          </ul>
+          <hr>
+          <strong class="sub-title-1">Using Inheritance to Write Simpler</strong>
+          <ul>
+            <li>Elements in an HTML document are structured in a hierarchy</li>
+            <li>Parent elements contain child elements</li>
+            <li>Elements can be both parent and child elements</li>
+            <li>The CSS properties inherit from parent to child</li>
+            <li>The property descriptions list whether a property is inherited</li>
+            <li>You can style multiple document elements with just a few style rules using inheritance</li>
+          </ul>
+          <hr>
+          <strong class="sub-title-1">Using Inheritance to Write Simpler Style Rules</strong>
+          <ul>
+            <li>Specific style rules</li>
+            <code class="code-block-ws">&lt;style type="text/css"&gt;
+          h1 {color: red;}
+          p {color: red;}
+          ul {color: red;}
+          em {color: red;}
+          li {color: red;}
+          &lt;/style&gt;</code>
+            <li>Using Inheritance</li>
+            <code class="code-block-ws">&lt;style type="text/css"&gt;
+          body {color: red;}
+          &lt;/style&gt;</code>
+          </ul>
+          <hr>
+          <strong class="sub-title-1">Examining Basic Selection Techniques</strong>
+          <ul>
+            <li>In this section, you will review style rule syntax and learn about the following basic selection
+              techniques:</li>
+            <ul>
+              <li>Using type selectors</li>
+              <li>Grouping selectors</li>
+              <li>Combining declarations</li>
+              <li>Using descendant selectors</li>
+            </ul>
+          </ul>
+
+          <hr>
+          <strong class="sub-title-1">Using Type Selectors</strong>
+          <ul>
+            <li>The selector determines the element to which a style declaration is applied</li>
+            <li>Type selectors are the simplest form of selector</li>
+            <li>They select every element in the document that matches the style rule</li>
+            <li>In the following example, all h1 elements are red</li>
+          </ul>
+          <hr>
+          <strong class="sub-title-1">Grouping Selectors</strong>
+          <ul>
+            <li>You can group selectors to which the same rules apply</li>
+            <li>Specific style rules:</li>
+            <code class="code-block-ws">h1 {color: red;}
+        h2 {color: red;}</code>
+            <li>Grouping selectors:</li>
+            <code class="code-block-ws">h1,h2{color: red;}</code>
+            <li>You can state multiple property declarations for the same selector</li>
+            <li>Specific style rules:</li>
+            <code class="code-block-ws">p {color: blue;}
+        p {font-size: 125%;}</code>
+            <li>Combining declarations:</li>
+            <code class="code-block-ws">p {
+            color: blue;
+            font-size: 125%;
+        }</code>
+          </ul>
+          <hr>
+          <strong class="sub-title-1">Using Descendant Selectors</strong>
+          <ul>
+            <li>You can select elements that are descendants of other elements</li>
+            <li>Selecting only *elements that are contained* within elements</li>
+            <code class="code-block-ws">p em {color: blue;}</code>
+          </ul>
+          <hr>
+          <strong class="sub-title-1">Using the Universal Selector</strong>
+          <ul>
+            <li>Universal selector lets you select groups of elements</li>
+            <li>Selecting all children of the dead element:</li>
+            <code class="code-block-ws">div * {font-family: sans-serif;}</code>
+          </ul>
+          <hr>
+          <strong class="sub-title-1">Using Class and ID Selectors</strong>
+          <ul>
+            <li>You will learn to select elements of an HTML document using the following methods:</li>
+            <ul>
+              <li>The class selector</li>
+              <li>The id selector</li>
+              <li>The &lt;div&gt; and &lt;span&gt; elements</li>
+              <li>The pseudo-class and pseudo-element selectors</li>
+            </ul>
+          </ul>
+          </li>
+          <hr>
+          <strong class="sub-title-1">Using the Class Selector</strong>
+          <ul>
+            <li>The class selector lets you write rules and give them a name</li>
+            <li>You can apply that name to any element you choose</li>
+            <li>The class attribute lets you apply the style rule name to an element</li>
+            <li>The period (.) flag character indicates the selector is a class selector</li>
+            <li>Style rule:
+              <code class="code-block-ws">.intro {font-size: 125%; font-family: sans-serif;}</code>
+            </li>
+            <li>Applied in document:
+              <code class="code-block-ws">&lt;p class="intro"&gt;This is the first paragraph of the document. 
+            It has a different style based on the "intro”class selector.&lt;/p&gt;</code>
+            </li>
+          </ul>
+          <hr>
+          <strong class="sub-title-1">Using the id Attribute Selector</strong>
+          <ul>
+            <li>The difference between id and class is that id refers to only one instance of the id attribute value
+              within a document</li>
+            <li>The ID attribute is used to identify layout sections of the page</li>
+            <li>The ID attribute uses a pound sign (#) flag character</li>
+          </ul>
+        </div>
+      </article>
+    </section>
+
+    <br>
+    <section class="main-section" id="WSL">
+      <header class="title">Windows Subsystem for Linux</header>
+      <hr>
+      <article>
+        <h3>List of Commands</h3>
+
+        <table class="table-container">
+          <thead>
+            <tr>
+              <th>Command</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>wsl --install</td>
+              <td>installs Linux on you computer</td>
+            </tr>
+            <tr>
+              <td>wsl</td>
+              <td>opens Linux in your terminal</td>
+            </tr>
+            <tr>
+              <td>logout or exit</td>
+              <td>returns to command prompt in windows</td>
+            </tr>
+            <tr>
+              <td>clear</td>
+              <td>clears the terminal screen</td>
+            </tr>
+            <tr>
+              <td class="tablediv">Apache Commands</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>sudo apt update</td>
+              <td>updates Linux before installation of Apache</td>
+            </tr>
+            <tr>
+              <td>sudo apt upgrade</td>
+              <td>upgrades Linux</td>
+            </tr>
+            <tr>
+              <td>sudo apt-get install apache2</td>
+              <td>installs Apache server</td>
+            </tr>
+            <tr>
+              <td>sudo service apache2 start</td>
+              <td>starts Apache Server</td>
+            </tr>
+            <tr>
+              <td>sudo service apache2 stop</td>
+              <td>stops Apache Server</td>
+            </tr>
+            <tr>
+              <td class="tablediv">Apache Setup</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>sudo nano</td>
+              <td>open text editor</td>
+            </tr>
+            <tr>
+              <td>sudo chown -R username path/to/working/directory</td>
+              <td>make folder writable</td>
+            </tr>
+            <tr>
+              <td>sudo nano /etc/apache2/sites-available/000-default.conf</td>
+              <td>enable site
+                look for document root and change it your desired folder to run in localhost</td>
+            </tr>
+            <tr>
+              <td>sudo systemctl status apache2</td>
+              <td>check if apache is running</td>
+            </tr>
+            <tr>
+              <td>sudo systemctl restart apache2</td>
+              <td>restart Apache. You need to this every time you change document root. The refresh your browser to
+                update the output.</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h3>Folder Locations</h3>
+
+        <ul>
+          <li>Apache Folder - <code class="code-inline">/etc/apache2</code></li>
+          <li>Document Root - <code class="code-inline">/var/www/</code></li>
+        </ul>
+
+      </article>
+    </section>
+
+    <br>
+    <section class="main-section" id="Flexbox">
+      <header class="title">Flexbox</header>
+      <hr>
+      <article>
+        <strong class="sub-title-1">Background</strong>
+        <p>The Flexbox Layout (Flexible Box) module (a W3C Candidate Recommendation as of October 2017) aims at
+          providing a more efficient way to lay out, align and distribute space among items in a container, even when
+          their size is unknown and/or dynamic (thus the word “flex”).</p>
+
+        <strong class="sub-title-1">Basics and terminology</strong>
+        <p>Since flexbox is a whole module and not a single property, it involves a lot of things including its whole
+          set of properties. Some of them are meant to be set on the container (parent element, known as “flex
+          container”) whereas the others are meant to be set on the children (said “flex items”).</p>
+
+        <strong class="sub-title-2">If “regular” layout is based on both block and inline flow directions, the flex
+          layout is based on “flex-flow directions”. Please have a look at this figure from the specification,
+          explaining the main idea behind the flex layout.</strong>
+        <p>Items will be laid out following either the <code class="code-inline">main axis</code> (from <code class="code-inline">main-start</code> to <code class="code-inline">main-end</code>) or the cross axis (from
+          <code class="code-inline">cross-start</code> to <code class="code-inline">cross-end</code>).</p>
+
+          <ul>
+            <li><strong>main axis</strong> &#8211; The main axis of a flex container is the primary axis along which flex items are laid out. Beware, it is not necessarily horizontal; it depends on the <code class="code-inline">flex-direction</code> property (see below).</li>
+            <li><strong>main-start | main-end</strong> &#8211; The flex items are placed within the container starting from main-start and going to main-end.</li>
+            <li><strong>main size</strong> &#8211; A flex item's width or height, whichever is in the main dimension, is the item's main size. The flex item's main size property is either the ‘width’ or ‘height’ property, whichever is in the main dimension.</li>
+            <li><strong>cross axis</strong> &#8211; The axis perpendicular to the main axis is called the cross axis. Its direction depends on the main axis direction.</li>
+            <li><strong>cross-start | cross-end</strong> &#8211; Flex lines are filled with items and placed into the container starting on the cross-start side of the flex container and going toward the cross-end side.</li>
+            <li><strong>cross size</strong> &#8211; The width or height of a flex item, whichever is in the cross dimension, is the item's cross size. The cross size property is whichever of ‘width’ or ‘height’ that is in the cross dimension.</li>
+          </ul>
+
+          <strong class="sub-title-1">Flexbox Properties</strong>
+          <ul>
+            <strong class="sub-title-1">Properties for the Parent (flex container)</strong>
+            <ul>
+              <li>
+                display
+                <p>
+                  This defines a flex container; inline or block depending on the given value. It enables a flex context for all its direct children.
+                </p>
+                <code class="code-block-ws">
+                .container {
+                    display: flex; /* or inline-flex */
+                }</code>
+              </li>
+              <li>
+                flex-direction
+                <p>
+                  This establishes the main-axis, thus defining the direction flex items are placed in the flex container. Flexbox is (aside from optional wrapping) a single-direction layout concept. Think of flex items as primarily laying out either in horizontal rows or vertical columns.
+                </p>
+                <code class="code-block-ws">
+                .container {
+                    flex-direction: row | row-reverse | column | column-reverse;
+                }</code>
+              </li>
+              <li>
+                flew-wrap
+                <p>
+                  By default, flex items will all try to fit onto one line. You can change that and allow the items to wrap as needed with this property.
+                </p>
+                <code class="code-block-ws">
+                .container {
+                    flex-wrap: nowrap | wrap | wrap-reverse;
+                }</code>
+              </li>
+              <li>
+                flex-flow
+                <p>
+                  This is a shorthand for the <code class="code-inline">flex-direction</code> and <code class="code-inline">flex-wrap properties</code>, which together define the flex container’s main and cross axes. The default value is <code class="code-inline">row nowrap</code>.
+                </p>
+                <code class="code-block-ws">
+                .container {
+                    flex-flow: column wrap;
+                }</code>
+              </li>
+              <li>
+                justify-content
+                <p>
+                  This defines the alignment along the main axis. It helps distribute extra free space leftover when either all the flex items on a line are inflexible, or are flexible but have reached their maximum size. It also exerts some control over the alignment of items when they overflow the line.
+                </p>
+                <code class="code-block-ws">
+                .container {
+                    justify-content: flex-start | flex-end | center | space-between | space-around | space-evenly | start | end | left | right ... + safe | unsafe;
+                }</code>
+              </li>
+              <li>
+                align-items
+                <p>
+                  This defines the default behavior for how flex items are laid out along the cross axis on the current line. Think of it as the <code class="code-inline">justify-content</code> version for the cross-axis (perpendicular to the main-axis).
+                </p>
+                <code class="code-block-ws">
+                .container {
+                    align-items: stretch | flex-start | flex-end | center | baseline | first baseline | last baseline | start | end | self-start | self-end + ... safe | unsafe;
+                }</code>
+              </li>
+              <li>
+                align-content
+                <p>
+                  This aligns a flex container’s lines within when there is extra space in the cross-axis, similar to how <code class="code-inline">justify-content</code> aligns individual items within the main-axis.
+                </p>
+                <code class="code-block-ws">
+                .container {
+                    align-content: flex-start | flex-end | center | space-between | space-around | space-evenly | stretch | start | end | baseline | first baseline | last baseline + ... safe | unsafe;
+                }</code>
+              </li>
+              <li>
+                gap, row-gap, column-gap
+                <p>
+                  The <code class="code-inline">gap</code> property explicitly controls the space between flex items. It applies that spacing only between items not on the outer edges.
+                </p>
+                <code class="code-block-ws">
+                .container {
+                    display: flex;
+                    ...
+                    gap: 10px;
+                    gap: 10px 20px; /* row-gap column gap */
+                    row-gap: 10px;
+                    column-gap: 20px;
+                }</code>
+              </li>
+            </ul>
+            <strong class="sub-title-1">Properties for the Children (flex items)</strong>
+            <ul>
+              <li>
+                order
+                <p>
+                  By default, flex items are laid out in the source order. However, the <code class="code-inline">order</code> property controls the order in which they appear in the flex container.
+                </p>
+                <code class="code-block-ws">
+                  .item {
+                    order: 5; /* default is 0 */
+                  }</code>
+              </li>
+              <li>
+                flex-grow
+                <p>
+                  This defines the ability for a flex item to grow if necessary. It accepts a unitless value that serves as a proportion. It dictates what amount of the available space inside the flex container the item should take up.
+                </p>
+                <code class="code-block-ws">
+                  .item {
+                    flex-grow: 4; /* default 0 */
+                  }</code>
+              </li>
+              <li>
+                flex-shrink
+                <p>
+                  This defines the ability for a flex item to shrink if necessary.
+                </p>
+                <code class="code-block-ws">
+                  .item {
+                    flex-shrink: 3; /* default 1 */
+                  }</code>
+              </li>
+              <li>
+                flex-basis
+                <p>This defines the default size of an element before the remaining space is distributed. It can be a length (e.g. 20%, 5rem, etc.) or a keyword. The <code class="code-inline">auto</code> keyword means "look at my width or height property" (which was temporarily done by the <code class="code-inline">main-size</code> keyword until deprecated). The <code class="code-inline">content</code> keyword means "size it based on the item's content" &#8211; this keyword isn't well supported yet, so it's hard to test and harder to know what its brethren <code class="code-inline">max-content</code>, <code class="code-inline">min-content</code>, and <code class="code-inline">fit-content</code> do.</p>
+
+                <code class="code-block-ws">
+                  .item {
+                    flex-basis:  | auto; /* default auto */
+                  }</code>
+              </li>
+              <li>
+                flex
+                <p>
+                  <p>This is the shorthand for <code class="code-inline">flex-grow,</code> <code class="code-inline">flex-shrink</code> and <code class="code-inline">flex-basis</code> combined. The second and third parameters (<code class="code-inline">flex-shrink</code> and <code class="code-inline">flex-basis</code>) are optional. The default is <code class="code-inline">0 1 auto</code>, but if you set it with a single number value, like <code class="code-inline">flex: 5;</code>, that changes the <code class="code-inline">flex-basis</code> to 0%, so it's like setting <code class="code-inline">flex-grow: 5; flex-shrink: 1; flex-basis: 0%;</code>.</p>
+
+                </p>
+                <code class="code-block-ws">
+                  .item {
+                    flex: none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ]
+                  }</code>
+              </li>
+              <li>
+                align-self
+                <p>
+                  This allows the default alignment (or the one specified by <code class="code-inline">align-items</code>) to be overridden for individual flex items.
+                </p>
+                <code class="code-block-ws">
+                  .item {
+                    align-self: auto | flex-start | flex-end | center | baseline | stretch;
+                  }</code>
+              </li>
+          </ul>
+          
+      </article>
+    </section>
+    
+    <br><br>
+    <section class="main-section" id="Reference">
+      <header class="title">References</header>
+      <hr>
+      <article>
+        <ul>
+          <li>
+            <a href="https://primusr.notion.site/Side-Notes-abb4ee9b86754ca4b6094529ca990e5f" target="_blank">CC14 Notes</a>
+          </li>
+          <li>
+            <a href="https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository" target="_blank">Github Docs</a>
+          </li>
+          <li>
+            <a href="https://github.com/git-guides/install-git" target="_blank">Git Guides</a>
+          </li>
+          <li>
+            <a href="https://www.w3schools.com/tags/default.asp" target="_blank">W3Schools</a>
+          </li>
+        </ul>
+      </article>
+    </section>
+  </main>
+
+
+</body>
+
+</html>
