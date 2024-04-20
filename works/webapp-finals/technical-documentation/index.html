@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <link rel="stylesheet" href="css/style.css">
@@ -28,9 +28,10 @@
   </nav>
   <main id="main-doc">
     <section class="main-section" id="Introduction">
-      <header class="title">Introduction</header>
+      <h1 class="title">Introduction</h1>
       <hr>
       <article>
+        <h2>What is Application Development?</h2>
         <p>
           Web Application Development is the process of creating and maintaining web
           applications, which are software programs that run on a web server and are
@@ -61,492 +62,468 @@
 
     <br>
     <section class="main-section" id="ClientSide_vs_ServerSide">
-      <header class="title">Client-Side vs Server-Side Development</header>
+      <h1 class="title">Client-Side vs Server-Side Development</h1>
       <hr>
       <article>
+        <h2>What is Client-Side, Server-Side, and Full-Stack Development?</h2>
         <p>
           Client-side and server-side development are two distinct aspects of web
           development that involve different technologies, responsibilities, and
           functionalities.
+        </p>
 
+        <section class="sub-section">
+          <h2 class="sub-title-1">Client-Side Development</h2>
+          <ul>
+            <li class="sub-title-li-1">
+              <strong>Definition:</strong> Client-side development refers to the activities that take place
+              on the user's device (typically a web browser) and involve the
+              user interface and user experience.
+            </li>
+            <li class="sub-title-li-1">
+              <strong>Technologies:</strong> HTML (Hypertext Markup Language), CSS (Cascading Style Sheets),
+              JavaScript, and various front-end frameworks and libraries like
+              React, Angular, or Vue.js.
+            </li>
+            <li class="sub-title-li-1">
+              <strong>Responsibilities:</strong>
+              <ul>
+                <li class="sub-title-li-2">Creating the structure (HTML) and style (CSS) of a web page.</li>
+                <li class="sub-title-li-2">Implementing interactive and dynamic features using JavaScript.</li>
+                <li class="sub-title-li-2">Managing the presentation layer and user interactions.</li>
+              </ul>
+            </li>
+            <li class="sub-title-li-1">
+              <strong>Advantages:</strong>
+              <ul>
+                <li class="sub-title-li-2">Fast and responsive user interfaces</li>
+                <li class="sub-title-li-2">Reduces server load as certain operations are performed on the client's side.
+                </li>
+                <li class="sub-title-li-2">Enhanced user experience with dynamic and interactive elements.</li>
+              </ul>
+            </li>
+          </ul>
+        </section>
 
-        <ul>
-          <strong class="sub-title-1">Client-Side Development</strong>
-          <li class="sub-title-li-1">
-            <strong>Definition:</strong>
-            Client-side development refers to the activities that take place
-            on the user's device (typically a web browser) and involve the
-            user interface and user experience.
-          </li>
-          <li class="sub-title-li-1">
-            <strong>Technologies:</strong>
-            HTML (Hypertext Markup Language), CSS (Cascading Style Sheets),
-            JavaScript, and various front-end frameworks and libraries like
-            React, Angular, or Vue.js.
-          </li>
-          <li class="sub-title-li-1">
-            <strong>Responsibilities:</strong>
-            <ul>
-              <li class="sub-title-li-2">
-                Creating the structure (HTML) and style (CSS) of a web page.
-              </li>
-              <li class="sub-title-li-2">
-                Implementing interactive and dynamic features using JavaScript.
-              </li>
-              <li class="sub-title-li-2">
-                Managing the presentation layer and user interactions.
-              </li>
-            </ul>
-          </li>
-          <li class="sub-title-li-1">
-            <strong>Advantages:</strong>
-            <ul>
-              <li class="sub-title-li-2">
-                Fast and responsive user interfaces
-              </li>
-              <li class="sub-title-li-2">
-                Reduces server load as certain operations are performed on the client's side.
-              </li>
-              <li class="sub-title-li-2">
-                Enhanced user experience with dynamic and interactive elements.
-              </li>
-            </ul>
-          </li>
+        <hr>
 
-          <br>
-          <hr><br>
+        <section class="sub-section">
+          <h2 class="sub-title-1">Server-Side Development</h2>
+          <ul>
+            <li class="sub-title-li-1">
+              <strong>Definition:</strong> Server-side development involves activities that occur on the web server,
+              managing and processing data, handling requests, and performing various
+              server-related operations.
+            </li>
+            <li class="sub-title-li-1">
+              <strong>Technologies:</strong> Server-side languages such as PHP, Python (Django), Ruby (Ruby on Rails),
+              Java
+              (Spring), and JavaScript (Node.js).
+            </li>
+            <li class="sub-title-li-1">
+              <strong>Responsibilities:</strong>
+              <ul>
+                <li class="sub-title-li-2">Handling data storage and retrieval from databases.</li>
+                <li class="sub-title-li-2">Executing business logic and application functionality.</li>
+                <li class="sub-title-li-2">Managing user authentication and authorization.</li>
+                <li class="sub-title-li-2">Generating dynamic content to be sent to the client.</li>
+              </ul>
+            </li>
+            <li class="sub-title-li-1">
+              <strong>Advantages:</strong>
+              <ul>
+                <li class="sub-title-li-2">Enhanced security as sensitive operations are performed on the server.</li>
+                <li class="sub-title-li-2">Centralized control over data and business logic.</li>
+                <li class="sub-title-li-2">Better scalability for handling a large number of users.</li>
+              </ul>
+            </li>
+          </ul>
+        </section>
 
-          <strong class="sub-title-1">Server-Side Development</strong>
-          <li class="sub-title-li-1">
-            <strong>Definition:</strong>
-            Server-side development involves activities that occur on the web server,
-            managing and processing data, handling requests, and performing various
-            server-related operations.
-          </li>
-          <li class="sub-title-li-1">
-            <strong>Technologies:</strong>
-            Server-side languages such as PHP, Python (Django), Ruby (Ruby on Rails), Java
-            (Spring), and JavaScript (Node.js).
-          </li>
-          <li class="sub-title-li-1">
-            <strong>Responsibilities:</strong>
-            <ul>
-              <li class="sub-title-li-2">
-                Handling data storage and retrieval from databases.
-              </li>
-              <li class="sub-title-li-2">
-                Executing business logic and application functionality.
-              </li>
-              <li class="sub-title-li-2">
-                Managing user authentication and authorization.
-              </li>
-              <li class="sub-title-li-2">
-                Generating dynamic content to be sent to the client.
-              </li>
-            </ul>
-          </li>
-          <li class="sub-title-li-1">
-            <strong>Advantages:</strong>
-            <ul>
-              <li class="sub-title-li-2">
-                Enhanced security as sensitive operations are performed on the server.
-              </li>
-              <li class="sub-title-li-2">
-                Centralized control over data and business logic.
-              </li>
-              <li class="sub-title-li-2">
-                Better scalability for handling a large number of users.
-              </li>
-            </ul>
-          </li>
+        <hr>
 
-          <br>
-          <hr><br>
-          <strong class="sub-title-1">Interaction Between Client-Side and Server-Side</strong>
-          <li class="sub-title-li-1">
-            <strong>Communication:</strong>
-            Both sides communicate through protocols like HTTP(S), and they exchange data
-            using formats like JSON or XML.
-          </li>
-          <li class="sub-title-li-1">
-            <strong>Workflow:</strong>
-            A typical web application involves the client making requests to the server, and
-            the server responds with the necessary data or performs actions.
-          </li>
+        <section class="sub-section">
+          <h2 class="sub-title-1">Interaction Between Client-Side and Server-Side</h2>
+          <ul>
+            <li class="sub-title-li-1">
+              <strong>Communication:</strong> Both sides communicate through protocols like HTTP(S), and they exchange
+              data
+              using formats like JSON or XML.
+            </li>
+            <li class="sub-title-li-1">
+              <strong>Workflow:</strong> A typical web application involves the client making requests to the server,
+              and
+              the server responds with the necessary data or performs actions.
+            </li>
+          </ul>
+        </section>
 
-          <br>
-          <strong class="sub-title-1">Full-Stack Development</strong>
-          <li class="sub-title-li-1">
-            <strong>Definition:</strong>
-            Developers who work on both client-side and server-side aspects are known as
-            full-stack developers.
-          </li>
-          <li class="sub-title-li-1">
-            <strong>Responsibilities:</strong>
-            Full-stack developers have a broader skill set and can handle tasks ranging from
-            designing user interfaces to managing server infrastructure.
-          </li>
-        </ul>
+        <hr>
+
+        <section class="sub-section">
+          <h2 class="sub-title-1">Full-Stack Development</h2>
+          <ul>
+            <li class="sub-title-li-1">
+              <strong>Definition:</strong> Developers who work on both client-side and server-side aspects are known as
+              full-stack developers.
+            </li>
+            <li class="sub-title-li-1">
+              <strong>Responsibilities:</strong> Full-stack developers have a broader skill set and can handle tasks
+              ranging from
+              designing user interfaces to managing server infrastructure.
+            </li>
+          </ul>
+        </section>
 
         <p>
           In modern web development, a balanced combination of both client-side and
           server-side technologies is crucial for building robust and efficient web
           applications. The choice between them depends on factors such as project
           requirements, performance considerations, and the desired user experience.
+        </p>
 
       </article>
     </section>
 
+
     <br>
     <section class="main-section" id="Overview_WebTech">
-      <header class="title">Overview of Web Technologies</header>
+      <h1 class="title">Overview of Web Technologies</h1>
       <hr>
       <article>
+        <h2>Web Technology</h2>
         <p>
           Web technology refers to the various tools, techniques, and protocols used for
           communication between different types of devices over the Internet. It is
           primarily concerned with how computers and systems connect to and interact with
           the web, and how the most common languages of the internet (HTML, CSS, and
           JavaScript) work together to allow information to be shared worldwide.
+        </p>
 
+        <section class="sub-section">
+          <h2 class="sub-title-1">Evolution of the World Wide Web</h2>
+          <ul> <!--Evolution-->
+            <li class="sub-title-li-1">
+              <strong>
+                Birth of the World Wide Web (WWW) by Tim Berners-Lee in 1989.
+              </strong>
+
+              <ul> <!--History-->
+                <li class="sub-title-li-2">
+                  The birth of the Internet can be traced back to the late 1960s and early
+                  1970s with the development of ARPANET (Advanced Research Projects Agency
+                  Network), a pioneering network that laid the groundwork for the
+                  interconnected global network we know today. Here are key milestones in the
+                  birth and early development of the Internet:
+
+                  <ul> <!--ARPANET -->
+                    <li class="sub-title-li-2">
+                      <strong>
+                        ARPANET Creation (1969)
+                      </strong>
+
+                      <ul>
+                        <li class="sub-title-li-2">
+                          ARPANET, the first packet-switching network, was developed by the
+                          United States Department of Defense's Advanced Research Projects
+                          Agency (ARPA, now DARPA).
+                        </li>
+                        <li class="sub-title-li-2">
+                          On October 29, 1969, ARPANET's first message was sent between two
+                          computers at the University of California, Los Angeles (UCLA) and
+                          the Stanford Research Institute (SRI). The message was "LOGIN."
+                        </li>
+                      </ul>
+
+                    </li>
+                  </ul> <!--ARPANET -->
+
+                  <ul> <!--TCP/IP -->
+                    <li class="sub-title-li-2">
+                      <strong>
+                        Development of TCP/IP (1970s)
+                      </strong>
+
+                      <ul>
+                        <li class="sub-title-li-2">
+                          The Transmission Control Protocol (TCP) and Internet Protocol (IP) were developed by Vinton
+                          Cerf
+                          and Bob Kahn.
+                        </li>
+                        <li class="sub-title-li-2">
+                          TCP/IP became the standardized communications protocol suite for ARPANET, forming the
+                          foundation
+                          for the entire Internet.
+                        </li>
+                      </ul>
+
+                    </li>
+                  </ul><!--TCP/IP -->
+
+                  <ul> <!--Expansion and Standardization-->
+                    <li class="sub-title-li-2">
+                      <strong>
+                        Expansion and Standardization (1970s-1980s)
+                      </strong>
+
+                      <ul>
+                        <li class="sub-title-li-2">
+                          The ARPANET continued to grow, connecting more research institutions and universities.
+                        </li>
+                        <li class="sub-title-li-2">
+                          TCP/IP was adopted as the protocol for connecting diverse networks, leading to the term
+                          "Internet" (short for interconnected networks).
+                        </li>
+                        <li class="sub-title-li-2">
+                          The development of standardized protocols contributed to the Internet's expansion.
+                        </li>
+                      </ul>
+
+                    </li>
+                  </ul> <!--Expansion and Standardization-->
+
+                  <ul> <!--DNS-->
+                    <li class="sub-title-li-2">
+                      <strong>
+                        Domain Name System (DNS) Introduction (1983)
+                      </strong>
+
+                      <ul>
+                        <li class="sub-title-li-2">
+                          The Domain Name System, which translates human-readable domain names into IP addresses, was
+                          introduced in 1983.
+                        </li>
+                        <li class="sub-title-li-2">
+                          This facilitated the use of easily memorable names instead of numerical IP addresses.
+                        </li>
+                      </ul>
+
+                    </li>
+                  </ul> <!--DNS-->
+
+                  <ul> <!--Commercialization-->
+                    <li class="sub-title-li-2">
+                      <strong>
+                        Commercialization (1990s)
+                      </strong>
+
+                      <ul>
+                        <li class="sub-title-li-2">
+                          The 1990s saw the commercialization of the Internet, with the launch of the World Wide Web and
+                          the development of browsers like Netscape.
+                        </li>
+                        <li class="sub-title-li-2">
+                          The Internet became accessible to the public, leading to a rapid increase in websites and
+                          online
+                          services.
+                        </li>
+                      </ul>
+
+                    </li>
+                  </ul> <!--Commercialization-->
+
+                  <ul> <!--Global Expansion and Popularization-->
+                    <li class="sub-title-li-2">
+                      <strong>
+                        Global Expansion and Popularization (1990s-Present)
+                      </strong>
+
+                      <ul>
+                        <li class="sub-title-li-2">
+                          The Internet expanded globally, connecting people, businesses, and governments worldwide.
+                        </li>
+                        <li class="sub-title-li-2">
+                          Technologies like broadband and mobile internet further increased accessibility.
+                        </li>
+                        <li class="sub-title-li-2">
+                          The Internet has become an integral part of everyday life, shaping communication, commerce,
+                          education, and entertainment.
+                        </li>
+                      </ul>
+                    </li>
+                  </ul> <!--Global Expansion and Popularization-->
+
+                  <p>
+                    The birth and development of the Internet were collaborative efforts
+                    involving numerous individuals, institutions, and technological
+                    advancements. The ARPANET project laid the groundwork for the
+                    interconnected and decentralized network that has since transformed how
+                    information is shared and accessed globally.
+                  </p>
+                </li>
+              </ul> <!--History-->
+            </li> <!--Evolution-->
+          </ul>
+        </section>
+
+        <hr>
+        <section class="sub-section">
+          <h2 class="sub-title-1">Key Internet Protocol</h2>
+          <ul>
+            <li class="sub-title-li-1"><!--HTTP-->
+              <strong>
+                HTTP (Hypertext Transfer Protocol)
+              </strong>
+
+              <ul>
+                <li class="sub-title-li-2">Foundation of data communication on the web.</li>
+                <li class="sub-title-li-2">Defines how messages are formatted and transmitted.</li>
+              </ul>
+
+            </li> <!--HTTP-->
+
+            <li class="sub-title-li-1"> <!--HTTPS-->
+              <strong>
+                HTTPS (Hypertext Transfer Protocol Secure)
+              </strong>
+
+              <ul>
+                <li class="sub-title-li-2">Secure version of HTTP using encryption (SSL/TLS).</li>
+                <li class="sub-title-li-2">Ensures secure data transfer, especially for sensitive information.</li>
+              </ul>
+
+            </li><!--HTTPS-->
+
+            <li class="sub-title-li-1"> <!--TCP/IP-->
+              <strong>
+                TCP/IP (Transmission Control Protocol/Internet Protocol)
+              </strong>
+
+              <ul>
+                <li class="sub-title-li-2">Fundamental suite of protocols for internet communication.</li>
+                <li class="sub-title-li-2">Facilitates reliable data transmission between connected devices.</li>
+              </ul>
+
+            </li><!--TCP/IP-->
+          </ul>
+        </section>
+
+
+        <hr>
+
+        <section class="sub-section">
+          <h2 class="sub-title-1">Client-Server Architecture</h2>
+
+          <ul>
+            <li class="sub-title-li-1"><!--Roles-->
+              <strong>
+                Roles
+              </strong>
+
+              <ul>
+                <li class="sub-title-li-2">Clients request services or resources.</li>
+                <li class="sub-title-li-2">Servers provide requested services or resources.</li>
+              </ul>
+            </li> <!--Roles-->
+
+            <li class="sub-title-li-1"> <!--Request-Response Cycle-->
+              <strong>
+                Request-Response Cycle
+              </strong>
+
+              <ul>
+                <li class="sub-title-li-2">Clients send requests to servers.</li>
+                <li class="sub-title-li-2">Servers process requests and send back responses.</li>
+              </ul>
+            </li><!--Request-Response Cycle-->
+
+            <li class="sub-title-li-1"> <!--Statelessness-->
+              <strong>
+                Statelessness
+              </strong>
+
+              <ul>
+                <li class="sub-title-li-2">Each request from a client to a server is independent.</li>
+                <li class="sub-title-li-2">No retention of client state between requests.</li>
+              </ul>
+            </li><!--Statelessness-->
+          </ul>
+        </section>
+
+
+        <hr>
+        <section class="sub-section">
+          <h2 class="sub-title-1">Internet Technologies</h2>
+          <ul>
+            <li class="sub-title-li-1"><!--HTML-->
+              <strong>
+                HTML (Hypertext Markup Language)
+              </strong>
+              <ul>
+                <li class="sub-title-li-2">Standard markup language for creating web pages.</li>
+                <li class="sub-title-li-2">Defines structure and layout using tags.</li>
+              </ul>
+            </li> <!--HTML-->
+
+            <li class="sub-title-li-1"> <!--CSS-->
+              <strong>
+                CSS (Cascading Style Sheets)
+              </strong>
+              <ul>
+                <li class="sub-title-li-2">Style sheet language for describing the presentation of a document.</li>
+                <li class="sub-title-li-2">Enhances the visual presentation of HTML elements.</li>
+              </ul>
+            </li><!--CSS-->
+
+            <li class="sub-title-li-1"> <!--JavaScript-->
+              <strong>
+                JavaScript
+              </strong>
+              <ul>
+                <li class="sub-title-li-2">Programming language that enables dynamic content on web pages.</li>
+                <li class="sub-title-li-2">Enhances interactivity and user experience.</li>
+              </ul>
+            </li><!--JavaScript-->
+          </ul>
+        </section>
+
+        <hr>
+
+        <section class="sub-section">
+          <h2 class="sub-title-1">Responsive Web Design</h2>
+          <ul>
+            <li class="sub-title-li-1"><!--Importance-->
+              <strong>
+                Importance:
+              </strong>
+              <ul>
+                <li class="sub-title-li-2">Ensures web applications work well on various devices and screen sizes.</li>
+                <li class="sub-title-li-2">Enhances user experience across desktops, tablets, and mobile devices.</li>
+              </ul>
+            </li> <!--Importance-->
+
+            <li class="sub-title-li-1"> <!--Media Queries-->
+              <strong>
+                Media Queries:
+              </strong>
+              <ul>
+                <li class="sub-title-li-2">CSS technique for applying styles based on device characteristics.</li>
+                <li class="sub-title-li-2">Allows adaptation to different viewport sizes.</li>
+              </ul>
+            </li><!--Media Queries-->
+
+            <li class="sub-title-li-1"> <!--Flexbox and Grid Layout-->
+              <strong>
+                Flexbox and Grid Layout:
+              </strong>
+              <ul>
+                <li class="sub-title-li-2">CSS layout models that simplify the design of flexible and responsive web
+                  layouts.</li>
+              </ul>
+            </li><!--Flexbox and Grid Layout-->
+          </ul>
+        </section>
+
+        <hr>
+
+        <strong class="sub-title-1">Conclusion</strong>
         <ul>
-          <strong class="sub-title-1">Internet</strong>
-          <li class="sub-title-li-1">
-            Global network of interconnected computers.
-          </li>
-          <li class="sub-title-li-1">
-            Enables communication, information sharing, and collaboration.
-          </li>
-
-          <br>
-          <hr><br>
-
-
-          <strong class="sub-title-1">Evolution of the World Wide Web</strong>
-          <li class="sub-title-li-1"> <!--Evolution-->
-            <strong>
-              Birth of the World Wide Web (WWW) by Tim Berners-Lee in 1989.
-            </strong>
-
-            <ul> <!--History-->
-              <li class="sub-title-li-2">
-                The birth of the Internet can be traced back to the late 1960s and early
-                1970s with the development of ARPANET (Advanced Research Projects Agency
-                Network), a pioneering network that laid the groundwork for the
-                interconnected global network we know today. Here are key milestones in the
-                birth and early development of the Internet:
-
-                <ul> <!--ARPANET -->
-                  <li class="sub-title-li-2">
-                    <strong>
-                      ARPANET Creation (1969)
-                    </strong>
-
-                    <ul>
-                      <li class="sub-title-li-2">
-                        ARPANET, the first packet-switching network, was developed by the
-                        United States Department of Defense's Advanced Research Projects
-                        Agency (ARPA, now DARPA).
-                      </li>
-                      <li class="sub-title-li-2">
-                        On October 29, 1969, ARPANET's first message was sent between two
-                        computers at the University of California, Los Angeles (UCLA) and
-                        the Stanford Research Institute (SRI). The message was "LOGIN."
-                      </li>
-                    </ul>
-
-                  </li>
-                </ul> <!--ARPANET -->
-
-                <ul> <!--TCP/IP -->
-                  <li class="sub-title-li-2">
-                    <strong>
-                      Development of TCP/IP (1970s)
-                    </strong>
-
-                    <ul>
-                      <li class="sub-title-li-2">
-                        The Transmission Control Protocol (TCP) and Internet Protocol (IP) were developed by Vinton Cerf
-                        and Bob Kahn.
-                      </li>
-                      <li class="sub-title-li-2">
-                        TCP/IP became the standardized communications protocol suite for ARPANET, forming the foundation
-                        for the entire Internet.
-                      </li>
-                    </ul>
-
-                  </li>
-                </ul><!--TCP/IP -->
-
-                <ul> <!--Expansion and Standardization-->
-                  <li class="sub-title-li-2">
-                    <strong>
-                      Expansion and Standardization (1970s-1980s)
-                    </strong>
-
-                    <ul>
-                      <li class="sub-title-li-2">
-                        The ARPANET continued to grow, connecting more research institutions and universities.
-                      </li>
-                      <li class="sub-title-li-2">
-                        TCP/IP was adopted as the protocol for connecting diverse networks, leading to the term
-                        "Internet" (short for interconnected networks).
-                      </li>
-                      <li class="sub-title-li-2">
-                        The development of standardized protocols contributed to the Internet's expansion.
-                      </li>
-                    </ul>
-
-                  </li>
-                </ul> <!--Expansion and Standardization-->
-
-                <ul> <!--DNS-->
-                  <li class="sub-title-li-2">
-                    <strong>
-                      Domain Name System (DNS) Introduction (1983)
-                    </strong>
-
-                    <ul>
-                      <li class="sub-title-li-2">
-                        The Domain Name System, which translates human-readable domain names into IP addresses, was
-                        introduced in 1983.
-                      </li>
-                      <li class="sub-title-li-2">
-                        This facilitated the use of easily memorable names instead of numerical IP addresses.
-                      </li>
-                    </ul>
-
-                  </li>
-                </ul> <!--DNS-->
-
-                <ul> <!--Commercialization-->
-                  <li class="sub-title-li-2">
-                    <strong>
-                      Commercialization (1990s)
-                    </strong>
-
-                    <ul>
-                      <li class="sub-title-li-2">
-                        The 1990s saw the commercialization of the Internet, with the launch of the World Wide Web and
-                        the development of browsers like Netscape.
-                      </li>
-                      <li class="sub-title-li-2">
-                        The Internet became accessible to the public, leading to a rapid increase in websites and online
-                        services.
-                      </li>
-                    </ul>
-
-                  </li>
-                </ul> <!--Commercialization-->
-
-                <ul> <!--Global Expansion and Popularization-->
-                  <li class="sub-title-li-2">
-                    <strong>
-                      Global Expansion and Popularization (1990s-Present)
-                    </strong>
-
-                    <ul>
-                      <li class="sub-title-li-2">
-                        The Internet expanded globally, connecting people, businesses, and governments worldwide.
-                      </li>
-                      <li class="sub-title-li-2">
-                        Technologies like broadband and mobile internet further increased accessibility.
-                      </li>
-                      <li class="sub-title-li-2">
-                        The Internet has become an integral part of everyday life, shaping communication, commerce,
-                        education, and entertainment.
-                      </li>
-                    </ul>
-                  </li>
-                </ul> <!--Global Expansion and Popularization-->
-
-                <p>
-                  The birth and development of the Internet were collaborative efforts
-                  involving numerous individuals, institutions, and technological
-                  advancements. The ARPANET project laid the groundwork for the
-                  interconnected and decentralized network that has since transformed how
-                  information is shared and accessed globally.
-
-
-              </li>
-            </ul> <!--History-->
-          </li> <!--Evolution-->
-
-          <br>
-          <hr><br>
-
-          <strong class="sub-title-1">Key Internet Protocol</strong>
-          <li class="sub-title-li-1"><!--HTTP-->
-            <strong>
-              HTTP (Hypertext Transfer Protocol)
-            </strong>
-
-            <ul>
-              <li class="sub-title-li-2">Foundation of data communication on the web.</li>
-              <li class="sub-title-li-2">Defines how messages are formatted and transmitted.</li>
-            </ul>
-
-          </li> <!--HTTP-->
-
-          <li class="sub-title-li-1"> <!--HTTPS-->
-            <strong>
-              HTTPS (Hypertext Transfer Protocol Secure)
-            </strong>
-
-            <ul>
-              <li class="sub-title-li-2">Secure version of HTTP using encryption (SSL/TLS).</li>
-              <li class="sub-title-li-2">Ensures secure data transfer, especially for sensitive information.</li>
-            </ul>
-
-          </li><!--HTTPS-->
-
-          <li class="sub-title-li-1"> <!--TCP/IP-->
-            <strong>
-              TCP/IP (Transmission Control Protocol/Internet Protocol)
-            </strong>
-
-            <ul>
-              <li class="sub-title-li-2">Fundamental suite of protocols for internet communication.</li>
-              <li class="sub-title-li-2">Facilitates reliable data transmission between connected devices.</li>
-            </ul>
-
-          </li><!--TCP/IP-->
-
-          <br>
-          <hr><br>
-
-          <strong class="sub-title-1">Client-Server Architecture</strong>
-          <li class="sub-title-li-1"><!--Roles-->
-            <strong>
-              Roles
-            </strong>
-
-            <ul>
-              <li class="sub-title-li-2">Clients request services or resources.</li>
-              <li class="sub-title-li-2">Servers provide requested services or resources.</li>
-            </ul>
-
-          </li> <!--Roles-->
-
-          <li class="sub-title-li-1"> <!--Request-Response Cycle-->
-            <strong>
-              Request-Response Cycle
-            </strong>
-
-            <ul>
-              <li class="sub-title-li-2">Clients send requests to servers.</li>
-              <li class="sub-title-li-2">Servers process requests and send back responses.</li>
-            </ul>
-
-          </li><!--Request-Response Cycle-->
-
-          <li class="sub-title-li-1"> <!--Statelessness-->
-            <strong>
-              Statelessness
-            </strong>
-
-            <ul>
-              <li class="sub-title-li-2">Each request from a client to a server is independent.</li>
-              <li class="sub-title-li-2">No retention of client state between requests.</li>
-            </ul>
-
-          </li><!--Statelessness-->
-
-          <br>
-          <hr><br>
-
-          <strong class="sub-title-1">Internet Technologies</strong>
-          <li class="sub-title-li-1"><!--HTML-->
-            <strong>
-              HTML (Hypertext Markup Language)
-            </strong>
-
-            <ul>
-              <li class="sub-title-li-2">Standard markup language for creating web pages.</li>
-              <li class="sub-title-li-2">Defines structure and layout using tags.</li>
-            </ul>
-
-          </li> <!--HTML-->
-
-          <li class="sub-title-li-1"> <!--CSS-->
-            <strong>
-              CSS (Cascading Style Sheets)
-            </strong>
-
-            <ul>
-              <li class="sub-title-li-2">Style sheet language for describing the presentation of a document.</li>
-              <li class="sub-title-li-2">Enhances the visual presentation of HTML elements.</li>
-            </ul>
-
-          </li><!--CSS-->
-
-          <li class="sub-title-li-1"> <!--JavaScript-->
-            <strong>
-              JavaScript
-            </strong>
-
-            <ul>
-              <li class="sub-title-li-2">Programming language that enables dynamic content on web pages.</li>
-              <li class="sub-title-li-2">Enhances interactivity and user experience.</li>
-            </ul>
-
-          </li><!--JavaScript-->
-
-          <br>
-          <hr><br>
-
-          <strong class="sub-title-1">Responsive Web Design</strong>
-          <li class="sub-title-li-1"><!--Importance-->
-            <strong>
-              Importance:
-            </strong>
-
-            <ul>
-              <li class="sub-title-li-2">Ensures web applications work well on various devices and screen sizes.</li>
-              <li class="sub-title-li-2">Enhances user experience across desktops, tablets, and mobile devices.</li>
-            </ul>
-
-          </li> <!--Importance-->
-
-          <li class="sub-title-li-1"> <!--Media Queries-->
-            <strong>
-              Media Queries:
-            </strong>
-
-            <ul>
-              <li class="sub-title-li-2">CSS technique for applying styles based on device characteristics.</li>
-              <li class="sub-title-li-2">Allows adaptation to different viewport sizes.</li>
-            </ul>
-
-          </li><!--Media Queries-->
-
-          <li class="sub-title-li-1"> <!--Flexbox and Grid Layout-->
-            <strong>
-              Flexbox and Grid Layout:
-            </strong>
-
-            <ul>
-              <li class="sub-title-li-2">CSS layout models that simplify the design of flexible and responsive web
-                layouts.</li>
-            </ul>
-
-          </li><!--Flexbox and Grid Layout-->
-
-          <br>
-          <hr><br>
-
-          <strong class="sub-title-1">Conclusion</strong>
           <li class="sub-title-li-1"> The Internet is a global network connecting computers. </li>
-
           <li class="sub-title-li-1">The World Wide Web facilitates information sharing and dynamic content.</li>
-
           <li class="sub-title-li-1">Protocols like HTTP, HTTPS, and TCP/IP underpin internet communication.</li>
-
           <li class="sub-title-li-1">Client-server architecture involves clients making requests and servers providing
             responses.</li>
-
           <li class="sub-title-li-1">Web technologies such as HTML, CSS, and JavaScript enable web development.</li>
-
           <li class="sub-title-li-1">Responsive web design ensures adaptability to diverse devices.</li>
         </ul>
 
@@ -554,65 +531,65 @@
           This overview provides a foundational understanding of key concepts in web
           technologies, including the Internet, the World Wide Web, internet protocols,
           client-server architecture, and fundamental web development technologies.
-
+        </p>
       </article>
     </section>
 
     <br>
     <section class="main-section" id="Git">
-      <header class="title">Git</header>
+      <h1 class="title">Git</h1>
       <hr>
       <article>
+        <h2>What is Git?</h2>
         <p>
-          Git is a free and open source distributed version control system designed to
-          handle everything from small to very large projects with speed and efficiency.
-          It is easy to learn and has a tiny footprint with lightning fast performance.
-          Moreover, it outclasses SCM tools like Subversion, CVS, Perforce, and ClearCase with
-          features like cheap local branching, convenient staging areas, and multiple
-          workflows.
+          Git is a free and open source distributed version control system designed to handle everything from small to
+          very large projects with speed and efficiency. It is easy to learn and has a tiny footprint with lightning
+          fast performance. Moreover, it outclasses SCM tools like Subversion, CVS, Perforce, and ClearCase with
+          features like cheap local branching, convenient staging areas, and multiple workflows.
         </p>
 
-        <strong class="sub-title-1">Setup Git</strong>
-        <ul>
-          <strong class="sub-title-2"><u>Install Git on Windows</u></strong>
-          <ol>
-            <li>Navigate to the latest <a href="https://gitforwindows.org/">Git for Windows installer</a> and download
-              the latest version.</li>
-
-            <li>Once the installer has started, follow the instructions as provided in the <strong>Git Setup</strong>
-              wizard screen until the installation is complete.</li>
-
-            <li>Open the windows command prompt (or <strong>Git Bash</strong> if you selected not to use the standard
-              Git Windows Command Prompt during the Git installation).</li>
-
-            <li>Type <code class="code-inline">git version</code> to verify Git was installed.</li>
-          </ol>
-
-          <p>Note: <a href="https://git-scm.com/download/win"><code class="code-inline">git-scm</a></code> is a popular
-              and recommended resource for downloading Git for Windows. The advantage of downloading Git from <code
-                class="code-inline">git-scm</code> is that your download automatically starts with the latest version of
-              Git included with the recommended command prompt, <code class="code-inline">Git Bash</code>. The download
-              source is the same <a href="https://gitforwindows.org/">Git for Windows installer</a> as referenced in the
-              steps above.
-          </p>
-
-          <strong class="sub-title-2"><u>Install Git on Mac</u></strong>
-          <ol>
-            <li>Navigate to the latest <a
-                href="https://sourceforge.net/projects/git-osx-installer/files/git-2.23.0-intel-universal-mavericks.dmg/download?use_mirror=autoselect">macOS
-                Git Installer</a> and download the latest version.</li>
-            <li>Once the installer has started, follow the instructions as provided until the installation is
-              complete.</li>
-            <li>Open the command prompt "terminal" and type <code class="code-inline">git version</code> to verify
-              Git was installed.</li>
-          </ol>
-          <p>Note: <a href="https://git-scm.com/download/mac"><code class="code-inline">git-scm</code></a> is a
-            popular and recommended resource for downloading Git on a Mac. The advantage of downloading Git from
-            <code class="code-inline">git-scm</code> is that your download automatically starts with the latest
-            version of Git. The download source is the same <a
+        <section>
+          <h2 class="sub-title-1">Setup Git</h2>
+          <ul>
+            <li>
+              <strong class="sub-title-2"><u>Install Git on Windows</u></strong>
+              <ol>
+                <li>Navigate to the latest <a href="https://gitforwindows.org/">Git for Windows installer</a> and
+                  download the latest version.</li>
+                <li>Once the installer has started, follow the instructions as provided in the <strong>Git
+                    Setup</strong> wizard screen until the installation is complete.</li>
+                <li>Open the Windows command prompt (or <strong>Git Bash</strong> if you selected not to use the
+                  standard Git Windows Command Prompt during the Git installation).</li>
+                <li>Type <code class="code-inline">git version</code> to verify Git was installed.</li>
+              </ol>
+            </li>
+            <li>
+              <strong class="sub-title-2"><u>Install Git on Mac</u></strong>
+              <ol>
+                <li>Navigate to the latest <a
+                    href="https://sourceforge.net/projects/git-osx-installer/files/git-2.23.0-intel-universal-mavericks.dmg/download?use_mirror=autoselect">macOS
+                    Git Installer</a> and download the latest version.</li>
+                <li>Once the installer has started, follow the instructions as provided until the installation is
+                  complete.</li>
+                <li>Open the command prompt "terminal" and type <code class="code-inline">git version</code> to verify
+                  Git was installed.</li>
+              </ol>
+            </li>
+          </ul>
+          <p>Note: <a href="https://git-scm.com/download/win"><code class="code-inline">git-scm</code></a> is a popular
+            and recommended resource for downloading Git for Windows. The advantage of downloading Git from <code
+              class="code-inline">git-scm</code> is that your download automatically starts with the latest version of
+            Git included with the recommended command prompt, <code class="code-inline">Git Bash</code>. The download
+            source is the same <a href="https://gitforwindows.org/">Git for Windows installer</a> as referenced in the
+            steps above.</p>
+          <p>Note: <a href="https://git-scm.com/download/mac"><code class="code-inline">git-scm</code></a> is a popular
+            and recommended resource for downloading Git on a Mac. The advantage of downloading Git from <code
+              class="code-inline">git-scm</code> is that your download automatically starts with the latest version of
+            Git. The download source is the same <a
               href="https://sourceforge.net/projects/git-osx-installer/files/git-2.23.0-intel-universal-mavericks.dmg/download?use_mirror=autoselect">macOS
-              Git Installer</a> as referenced in the steps above.
-        </ul>
+              Git Installer</a> as referenced in the steps above.</p>
+        </section>
+
         <br>
         <hr><br>
         <strong class="sub-title-1">Clone Repository</strong>
@@ -1022,7 +999,7 @@
 
     <br>
     <section class="main-section" id="Intro_to_HTML5_CSS_JS">
-      <header class="title">Introduction to HTML5, CSS, and JavaScript</header>
+      <h1 class="title">Introduction to HTML5, CSS, and JavaScript</h1>
       <hr>
       <article>
         <h3>HTML5 (Hypertext Markup Language):</h3>
@@ -1147,7 +1124,7 @@
 
     <br>
     <section class="main-section" id="HTML_Elements">
-      <header class="title">HTML Elements</header>
+      <h1 class="title">HTML Elements</h1>
       <hr>
       <article>
         <h2>HTML Tags Ordered Alphabetically</h2>
@@ -1659,18 +1636,17 @@
             <td>Defines a possible line-break</td>
           </tr>
         </table>
-        </div>
       </article>
     </section>
 
     <br>
     <section class="main-section" id="Intro_CSS">
-      <header class="title">Introducing Cascading Style Sheets</header>
+      <h1 class="title">Introducing Cascading Style Sheets</h1>
       <hr>
       <article>
+        <h2>Recognizing the Benefits of Using CSS</h2>
         <div>
-          <strong class="sub-title-1">Recognizing the Benefits of Using CSS</strong>
-          <p>The Evolution of CSS</p>
+          <strong class="sub-title-1">Evolution of CSS</strong>
           <ul>
             <li>CSS was developed to standardize display information</li>
             <li>CSS was slow to be supported by browsers</li>
@@ -1713,26 +1689,28 @@
 
           </ul>
           <hr>
-          <strong class="sub-title-1" p>Linking to an External Style Sheet</strong>
+          <strong class="sub-title-1">Linking to an External Style Sheet</strong>
           <ul>
             <li>The link element lets you specify an external style sheet</li>
             <li>It is used within the section of a document</li>
-            <code class="code-block-ws">&lt;link href="styles.css" rel="stylesheet" type="text/css" /&gt;</code>
           </ul>
+          <code class="code-block-ws">&lt;link href="styles.css" rel="stylesheet" type="text/css" /&gt;</code>
           <hr>
           <strong class="sub-title-1">Using Internal Style Sheets</strong>
           <ul>
             <li>Internal style sheets are contained within the &lt;style&gt; element</li>
             <li>The style element is contained within the &lt;head&gt; section of the document</li>
             <li>Style rules contained in an internal style sheet only affect the document in which they reside</li>
-            <code class="code-block-ws">
-                &lt;head&gt;
-                  &lt;title&gt;Sample Document&lt;/title&gt;
-                  &lt;style type="text/css"&gt;
-                  h1 {color: red;}
-                  &lt;/style&gt;
-                &lt;/head&gt;</code>
           </ul>
+          <code class="code-block-ws">
+            &lt;head&gt;
+              &lt;title&gt;Sample Document&lt;/title&gt;
+              &lt;style type="text/css"&gt;
+              h1 {color: red;}
+              &lt;/style&gt;
+            &lt;/head&gt;
+          </code>
+
           <hr>
           <strong class="sub-title-1">Using Inline Styles</strong>
           <ul>
@@ -1740,23 +1718,28 @@
             <li>The style attribute can be used to override a style that was set at a higher level</li>
             <li>The style attribute is useful for testing styles during development</li>
             <li>This is the least used method of applying CSS styles</li>
-            <code class="code-block-ws">&lt;h1 style="color:black"&gt;Some Text&lt;/h1&gt;</code>
           </ul>
+          <code class="code-block-ws">&lt;h1 style="color:black"&gt;Some Text&lt;/h1&gt;</code>
           <hr>
           <strong class="sub-title-1">Writing Clean CSS Code</strong>
           <ul>
             <li>Write CSS code that is consistent and easy to read</li>
             <li>Correct but hard-to-read:</li>
-            <code
-              class="code-block-ws">p {font-family: arial, helvetica, sans-serif; font-size: 85%; line-height: 110%; margin-left: 30px;}</code>
-            <li>Better:</li>
-            <code class="code-block-ws">p {
-              font-family: arial, helvetica, sans-serif;
-              font-size: 85%;
-              line-height: 110%;
-              margin-left: 30px;
-          }</code>
           </ul>
+          <code
+            class="code-block-ws">p {font-family: arial, helvetica, sans-serif; font-size: 85%; line-height: 110%; margin-left: 30px;}</code>
+          <ul>
+            <li>Better:</li>
+          </ul>
+          <code class="code-block-ws">
+          p {
+            font-family: arial, helvetica, sans-serif;
+            font-size: 85%;
+            line-height: 110%;
+            margin-left: 30px;
+          }
+          </code>
+
           <hr>
           <strong class="sub-title-1">Using Inheritance to Write Simpler</strong>
           <ul>
@@ -1771,29 +1754,35 @@
           <strong class="sub-title-1">Using Inheritance to Write Simpler Style Rules</strong>
           <ul>
             <li>Specific style rules</li>
-            <code class="code-block-ws">&lt;style type="text/css"&gt;
-          h1 {color: red;}
-          p {color: red;}
-          ul {color: red;}
-          em {color: red;}
-          li {color: red;}
-          &lt;/style&gt;</code>
-            <li>Using Inheritance</li>
-            <code class="code-block-ws">&lt;style type="text/css"&gt;
-          body {color: red;}
-          &lt;/style&gt;</code>
           </ul>
+          <code class="code-block-ws">
+            &lt;style type="text/css"&gt;
+              h1 {color: red;}
+              p {color: red;}
+              ul {color: red;}
+              em {color: red;}
+              li {color: red;}
+            &lt;/style&gt;
+          </code>
+          <ul>
+            <li>Using Inheritance</li>
+          </ul>
+          <code class="code-block-ws">
+            &lt;style type="text/css"&gt;
+              body {color: red;}
+            &lt;/style&gt;
+          </code>
+
+
           <hr>
           <strong class="sub-title-1">Examining Basic Selection Techniques</strong>
+          <p>In this section, you will review style rule syntax and learn about the following basic selection
+            techniques:</p>
           <ul>
-            <li>In this section, you will review style rule syntax and learn about the following basic selection
-              techniques:</li>
-            <ul>
-              <li>Using type selectors</li>
-              <li>Grouping selectors</li>
-              <li>Combining declarations</li>
-              <li>Using descendant selectors</li>
-            </ul>
+            <li>Using type selectors</li>
+            <li>Grouping selectors</li>
+            <li>Combining declarations</li>
+            <li>Using descendant selectors</li>
           </ul>
 
           <hr>
@@ -1804,51 +1793,68 @@
             <li>They select every element in the document that matches the style rule</li>
             <li>In the following example, all h1 elements are red</li>
           </ul>
+
           <hr>
           <strong class="sub-title-1">Grouping Selectors</strong>
           <ul>
             <li>You can group selectors to which the same rules apply</li>
             <li>Specific style rules:</li>
-            <code class="code-block-ws">h1 {color: red;}
-        h2 {color: red;}</code>
+          </ul>
+          <code class="code-block-ws">
+              h1 {color: red;}
+              h2 {color: red;}
+            </code>
+          <ul>
             <li>Grouping selectors:</li>
-            <code class="code-block-ws">h1,h2{color: red;}</code>
+          </ul>
+          <code class="code-block-ws">
+              h1,h2{color: red;}
+            </code>
+          <ul>
             <li>You can state multiple property declarations for the same selector</li>
             <li>Specific style rules:</li>
-            <code class="code-block-ws">p {color: blue;}
-        p {font-size: 125%;}</code>
-            <li>Combining declarations:</li>
-            <code class="code-block-ws">p {
-            color: blue;
-            font-size: 125%;
-        }</code>
           </ul>
+          <code class="code-block-ws">
+              p {color: blue;}
+              p {font-size: 125%;}
+            </code>
+          <ul>
+            <li>Combining declarations:</li>
+          </ul>
+          <code class="code-block-ws">
+              p {
+                color: blue;
+                font-size: 125%;
+              }
+            </code>
+
+
           <hr>
           <strong class="sub-title-1">Using Descendant Selectors</strong>
           <ul>
             <li>You can select elements that are descendants of other elements</li>
             <li>Selecting only *elements that are contained* within elements</li>
-            <code class="code-block-ws">p em {color: blue;}</code>
           </ul>
+          <code class="code-block-ws">p em {color: blue;}</code>
+
           <hr>
           <strong class="sub-title-1">Using the Universal Selector</strong>
           <ul>
             <li>Universal selector lets you select groups of elements</li>
             <li>Selecting all children of the dead element:</li>
-            <code class="code-block-ws">div * {font-family: sans-serif;}</code>
           </ul>
+          <code class="code-block-ws">div * {font-family: sans-serif;}</code>
+
           <hr>
           <strong class="sub-title-1">Using Class and ID Selectors</strong>
+          <p>You will learn to select elements of an HTML document using the following methods:</p>
           <ul>
-            <li>You will learn to select elements of an HTML document using the following methods:</li>
-            <ul>
-              <li>The class selector</li>
-              <li>The id selector</li>
-              <li>The &lt;div&gt; and &lt;span&gt; elements</li>
-              <li>The pseudo-class and pseudo-element selectors</li>
-            </ul>
+            <li>The class selector</li>
+            <li>The id selector</li>
+            <li>The &lt;div&gt; and &lt;span&gt; elements</li>
+            <li>The pseudo-class and pseudo-element selectors</li>
           </ul>
-          </li>
+
           <hr>
           <strong class="sub-title-1">Using the Class Selector</strong>
           <ul>
@@ -1878,7 +1884,7 @@
 
     <br>
     <section class="main-section" id="WSL">
-      <header class="title">Windows Subsystem for Linux</header>
+      <h1 class="title">Windows Subsystem for Linux</h1>
       <hr>
       <article>
         <h3>List of Commands</h3>
@@ -1972,9 +1978,10 @@
 
     <br>
     <section class="main-section" id="Flexbox">
-      <header class="title">Flexbox</header>
+      <h1 class="title">Flexbox</h1>
       <hr>
       <article>
+        <h2>What is Flexbox?</h2>
         <strong class="sub-title-1">Background</strong>
         <p>The Flexbox Layout (Flexible Box) module (a W3C Candidate Recommendation as of October 2017) aims at
           providing a more efficient way to lay out, align and distribute space among items in a container, even when
@@ -1988,36 +1995,52 @@
         <strong class="sub-title-2">If “regular” layout is based on both block and inline flow directions, the flex
           layout is based on “flex-flow directions”. Please have a look at this figure from the specification,
           explaining the main idea behind the flex layout.</strong>
-        <p>Items will be laid out following either the <code class="code-inline">main axis</code> (from <code class="code-inline">main-start</code> to <code class="code-inline">main-end</code>) or the cross axis (from
-          <code class="code-inline">cross-start</code> to <code class="code-inline">cross-end</code>).</p>
+        <p>Items will be laid out following either the <code class="code-inline">main axis</code> (from <code
+            class="code-inline">main-start</code> to <code class="code-inline">main-end</code>) or the cross axis (from
+          <code class="code-inline">cross-start</code> to <code class="code-inline">cross-end</code>).
+        </p>
 
-          <ul>
-            <li><strong>main axis</strong> &#8211; The main axis of a flex container is the primary axis along which flex items are laid out. Beware, it is not necessarily horizontal; it depends on the <code class="code-inline">flex-direction</code> property (see below).</li>
-            <li><strong>main-start | main-end</strong> &#8211; The flex items are placed within the container starting from main-start and going to main-end.</li>
-            <li><strong>main size</strong> &#8211; A flex item's width or height, whichever is in the main dimension, is the item's main size. The flex item's main size property is either the ‘width’ or ‘height’ property, whichever is in the main dimension.</li>
-            <li><strong>cross axis</strong> &#8211; The axis perpendicular to the main axis is called the cross axis. Its direction depends on the main axis direction.</li>
-            <li><strong>cross-start | cross-end</strong> &#8211; Flex lines are filled with items and placed into the container starting on the cross-start side of the flex container and going toward the cross-end side.</li>
-            <li><strong>cross size</strong> &#8211; The width or height of a flex item, whichever is in the cross dimension, is the item's cross size. The cross size property is whichever of ‘width’ or ‘height’ that is in the cross dimension.</li>
-          </ul>
+        <ul>
+          <li><strong>main axis</strong> &#8211; The main axis of a flex container is the primary axis along which flex
+            items are laid out. Beware, it is not necessarily horizontal; it depends on the <code
+              class="code-inline">flex-direction</code> property (see below).</li>
+          <li><strong>main-start | main-end</strong> &#8211; The flex items are placed within the container starting
+            from main-start and going to main-end.</li>
+          <li><strong>main size</strong> &#8211; A flex item's width or height, whichever is in the main dimension, is
+            the item's main size. The flex item's main size property is either the ‘width’ or ‘height’ property,
+            whichever is in the main dimension.</li>
+          <li><strong>cross axis</strong> &#8211; The axis perpendicular to the main axis is called the cross axis. Its
+            direction depends on the main axis direction.</li>
+          <li><strong>cross-start | cross-end</strong> &#8211; Flex lines are filled with items and placed into the
+            container starting on the cross-start side of the flex container and going toward the cross-end side.</li>
+          <li><strong>cross size</strong> &#8211; The width or height of a flex item, whichever is in the cross
+            dimension, is the item's cross size. The cross size property is whichever of ‘width’ or ‘height’ that is in
+            the cross dimension.</li>
+        </ul>
 
-          <strong class="sub-title-1">Flexbox Properties</strong>
-          <ul>
+        <strong class="sub-title-1">Flexbox Properties</strong>
+        <ul>
+          <li>
             <strong class="sub-title-1">Properties for the Parent (flex container)</strong>
             <ul>
               <li>
                 display
                 <p>
-                  This defines a flex container; inline or block depending on the given value. It enables a flex context for all its direct children.
+                  This defines a flex container; inline or block depending on the given value. It enables a flex context
+                  for all its direct children.
                 </p>
                 <code class="code-block-ws">
-                .container {
-                    display: flex; /* or inline-flex */
-                }</code>
+                    .container {
+                        display: flex; /* or inline-flex */
+                    }</code>
               </li>
+
               <li>
                 flex-direction
                 <p>
-                  This establishes the main-axis, thus defining the direction flex items are placed in the flex container. Flexbox is (aside from optional wrapping) a single-direction layout concept. Think of flex items as primarily laying out either in horizontal rows or vertical columns.
+                  This establishes the main-axis, thus defining the direction flex items are placed in the flex
+                  container. Flexbox is (aside from optional wrapping) a single-direction layout concept. Think of flex
+                  items as primarily laying out either in horizontal rows or vertical columns.
                 </p>
                 <code class="code-block-ws">
                 .container {
@@ -2027,7 +2050,8 @@
               <li>
                 flew-wrap
                 <p>
-                  By default, flex items will all try to fit onto one line. You can change that and allow the items to wrap as needed with this property.
+                  By default, flex items will all try to fit onto one line. You can change that and allow the items to
+                  wrap as needed with this property.
                 </p>
                 <code class="code-block-ws">
                 .container {
@@ -2037,7 +2061,9 @@
               <li>
                 flex-flow
                 <p>
-                  This is a shorthand for the <code class="code-inline">flex-direction</code> and <code class="code-inline">flex-wrap properties</code>, which together define the flex container’s main and cross axes. The default value is <code class="code-inline">row nowrap</code>.
+                  This is a shorthand for the <code class="code-inline">flex-direction</code> and <code
+                    class="code-inline">flex-wrap properties</code>, which together define the flex container’s main and
+                  cross axes. The default value is <code class="code-inline">row nowrap</code>.
                 </p>
                 <code class="code-block-ws">
                 .container {
@@ -2047,7 +2073,9 @@
               <li>
                 justify-content
                 <p>
-                  This defines the alignment along the main axis. It helps distribute extra free space leftover when either all the flex items on a line are inflexible, or are flexible but have reached their maximum size. It also exerts some control over the alignment of items when they overflow the line.
+                  This defines the alignment along the main axis. It helps distribute extra free space leftover when
+                  either all the flex items on a line are inflexible, or are flexible but have reached their maximum
+                  size. It also exerts some control over the alignment of items when they overflow the line.
                 </p>
                 <code class="code-block-ws">
                 .container {
@@ -2057,7 +2085,9 @@
               <li>
                 align-items
                 <p>
-                  This defines the default behavior for how flex items are laid out along the cross axis on the current line. Think of it as the <code class="code-inline">justify-content</code> version for the cross-axis (perpendicular to the main-axis).
+                  This defines the default behavior for how flex items are laid out along the cross axis on the current
+                  line. Think of it as the <code class="code-inline">justify-content</code> version for the cross-axis
+                  (perpendicular to the main-axis).
                 </p>
                 <code class="code-block-ws">
                 .container {
@@ -2067,7 +2097,8 @@
               <li>
                 align-content
                 <p>
-                  This aligns a flex container’s lines within when there is extra space in the cross-axis, similar to how <code class="code-inline">justify-content</code> aligns individual items within the main-axis.
+                  This aligns a flex container’s lines within when there is extra space in the cross-axis, similar to
+                  how <code class="code-inline">justify-content</code> aligns individual items within the main-axis.
                 </p>
                 <code class="code-block-ws">
                 .container {
@@ -2077,7 +2108,8 @@
               <li>
                 gap, row-gap, column-gap
                 <p>
-                  The <code class="code-inline">gap</code> property explicitly controls the space between flex items. It applies that spacing only between items not on the outer edges.
+                  The <code class="code-inline">gap</code> property explicitly controls the space between flex items. It
+                  applies that spacing only between items not on the outer edges.
                 </p>
                 <code class="code-block-ws">
                 .container {
@@ -2095,7 +2127,9 @@
               <li>
                 order
                 <p>
-                  By default, flex items are laid out in the source order. However, the <code class="code-inline">order</code> property controls the order in which they appear in the flex container.
+                  By default, flex items are laid out in the source order. However, the <code
+                    class="code-inline">order</code> property controls the order in which they appear in the flex
+                  container.
                 </p>
                 <code class="code-block-ws">
                   .item {
@@ -2105,7 +2139,9 @@
               <li>
                 flex-grow
                 <p>
-                  This defines the ability for a flex item to grow if necessary. It accepts a unitless value that serves as a proportion. It dictates what amount of the available space inside the flex container the item should take up.
+                  This defines the ability for a flex item to grow if necessary. It accepts a unitless value that serves
+                  as a proportion. It dictates what amount of the available space inside the flex container the item
+                  should take up.
                 </p>
                 <code class="code-block-ws">
                   .item {
@@ -2124,7 +2160,14 @@
               </li>
               <li>
                 flex-basis
-                <p>This defines the default size of an element before the remaining space is distributed. It can be a length (e.g. 20%, 5rem, etc.) or a keyword. The <code class="code-inline">auto</code> keyword means "look at my width or height property" (which was temporarily done by the <code class="code-inline">main-size</code> keyword until deprecated). The <code class="code-inline">content</code> keyword means "size it based on the item's content" &#8211; this keyword isn't well supported yet, so it's hard to test and harder to know what its brethren <code class="code-inline">max-content</code>, <code class="code-inline">min-content</code>, and <code class="code-inline">fit-content</code> do.</p>
+                <p>This defines the default size of an element before the remaining space is distributed. It can be a
+                  length (e.g. 20%, 5rem, etc.) or a keyword. The <code class="code-inline">auto</code> keyword means
+                  "look at my width or height property" (which was temporarily done by the <code
+                    class="code-inline">main-size</code> keyword until deprecated). The <code
+                    class="code-inline">content</code> keyword means "size it based on the item's content" &#8211; this
+                  keyword isn't well supported yet, so it's hard to test and harder to know what its brethren <code
+                    class="code-inline">max-content</code>, <code class="code-inline">min-content</code>, and <code
+                    class="code-inline">fit-content</code> do.</p>
 
                 <code class="code-block-ws">
                   .item {
@@ -2133,50 +2176,56 @@
               </li>
               <li>
                 flex
-                <p>
-                  <p>This is the shorthand for <code class="code-inline">flex-grow,</code> <code class="code-inline">flex-shrink</code> and <code class="code-inline">flex-basis</code> combined. The second and third parameters (<code class="code-inline">flex-shrink</code> and <code class="code-inline">flex-basis</code>) are optional. The default is <code class="code-inline">0 1 auto</code>, but if you set it with a single number value, like <code class="code-inline">flex: 5;</code>, that changes the <code class="code-inline">flex-basis</code> to 0%, so it's like setting <code class="code-inline">flex-grow: 5; flex-shrink: 1; flex-basis: 0%;</code>.</p>
+                <p>This is the shorthand for <code class="code-inline">flex-grow,</code> <code
+                    class="code-inline">flex-shrink</code> and <code class="code-inline">flex-basis</code> combined. The
+                  second and third parameters (<code class="code-inline">flex-shrink</code> and <code
+                    class="code-inline">flex-basis</code>) are optional. The default is <code
+                    class="code-inline">0 1 auto</code>, but if you set it with a single number value, like <code
+                    class="code-inline">flex: 5;</code>, that changes the <code class="code-inline">flex-basis</code> to
+                  0%, so it's like setting <code
+                    class="code-inline">flex-grow: 5; flex-shrink: 1; flex-basis: 0%;</code>.</p>
 
-                </p>
                 <code class="code-block-ws">
                   .item {
-                    flex: none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ]
+                    flex: none | [ &lt;'flex-grow'&gt; &lt;'flex-shrink'&gt;>? || &lt;'flex-basis'&gt; ]
                   }</code>
               </li>
               <li>
                 align-self
                 <p>
-                  This allows the default alignment (or the one specified by <code class="code-inline">align-items</code>) to be overridden for individual flex items.
+                  This allows the default alignment (or the one specified by <code
+                    class="code-inline">align-items</code>) to be overridden for individual flex items.
                 </p>
                 <code class="code-block-ws">
                   .item {
                     align-self: auto | flex-start | flex-end | center | baseline | stretch;
                   }</code>
               </li>
-          </ul>
-          
-      </article>
-    </section>
-    
-    <br><br>
-    <section class="main-section" id="Reference">
-      <header class="title">References</header>
-      <hr>
-      <article>
-        <ul>
-          <li>
-            <a href="https://primusr.notion.site/Side-Notes-abb4ee9b86754ca4b6094529ca990e5f" target="_blank">CC14 Notes</a>
-          </li>
-          <li>
-            <a href="https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository" target="_blank">Github Docs</a>
-          </li>
-          <li>
-            <a href="https://github.com/git-guides/install-git" target="_blank">Git Guides</a>
-          </li>
-          <li>
-            <a href="https://www.w3schools.com/tags/default.asp" target="_blank">W3Schools</a>
-          </li>
+            </ul>
         </ul>
       </article>
+    </section>
+
+    <br><br>
+    <section class="main-section" id="Reference">
+      <h1 class="title">References</h1>
+      <hr>
+      <ul>
+        <li>
+          <a href="https://primusr.notion.site/Side-Notes-abb4ee9b86754ca4b6094529ca990e5f" target="_blank">CC14
+            Notes</a>
+        </li>
+        <li>
+          <a href="https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository"
+            target="_blank">Github Docs</a>
+        </li>
+        <li>
+          <a href="https://github.com/git-guides/install-git" target="_blank">Git Guides</a>
+        </li>
+        <li>
+          <a href="https://www.w3schools.com/tags/default.asp" target="_blank">W3Schools</a>
+        </li>
+      </ul>
     </section>
   </main>
 

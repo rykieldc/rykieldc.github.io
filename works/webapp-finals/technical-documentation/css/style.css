@@ -33,6 +33,10 @@ header {
   font-weight: bolder;
 }
 
+.sub-section {
+  margin-bottom: 20px;
+}
+
 .sub-title-1{
   font-size: 1.3em;
   font-weight: bolder;
@@ -44,7 +48,7 @@ header {
 }
 
 .sub-title-li-1{
-  margin: 0px 0px 0px 40px;
+  margin: 0px 0px 0px 20px;
 }
 
 .sub-title-li-2{
